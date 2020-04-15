@@ -15,6 +15,7 @@
     }
     & .cruise__inner {
       position: absolute;
+      top: 0;
       margin-top: 0;
       height: 100%;
       color: $default-color;
@@ -37,7 +38,9 @@
     padding: 0 30px;
   }
   &__inner {
-    position: relative;
+    position: absolute;
+    top: 80%;
+    left: 0;
     margin-top: auto;
   }
   &__title {
