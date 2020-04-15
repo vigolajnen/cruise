@@ -7,10 +7,10 @@
   background-repeat: no-repeat;
   background-color: #dde9f5;
 
-  @media (min-width: 769px) {
+  @media (min-width: $tablet) {
     padding: $section-pd-sm 0;
   }
-  @media (min-width: 1023px) {
+  @media (min-width: $desktop) {
     padding: $section-pd-md 0;
   }
   &__list {

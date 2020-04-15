@@ -1,10 +1,10 @@
 .contacts {
   padding: $section-pd 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: $tablet) {
     padding: $section-pd-sm 0;
   }
-  @media (min-width: 1023px) {
+  @media (min-width: $desktop) {
     padding: $section-pd-md 0;
   }
   &__container {
@@ -14,9 +14,11 @@
     align-items: center;
   }
   &__map {
+    order: 1;
     width: 100%;
 
-    @media (min-width: 769px) {
+    @media (min-width: $tablet) {
+      order: 0;
       width: 50%;
     }
 
@@ -31,7 +33,7 @@
     
     box-sizing: border-box;
 
-    @media (min-width: 769px) {
+    @media (min-width: $tablet) {
       width: 50%;
       padding-left: 80px;
     }
@@ -48,10 +50,16 @@
   }
   &__link {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
     color: $primary-color;
     text-decoration: none;
+    box-sizing: border-box;
+
+    & span {
+      width: 90%;
+      box-sizing: border-box;
+    }
   }
   &__icon {
     margin-right: 15px;

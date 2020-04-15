@@ -1,8 +1,7 @@
 .promo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  display: table;
+  width: 100%;
 
   min-height: 650px;
 
@@ -15,12 +14,12 @@
   color: $default-color;
 
   &__container {
-    width: 100%;
-    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
 
-    @media (min-width: 769px) {
+    @media (min-width: $tablet) {
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
       padding-left: 200px;
     }
   }
@@ -29,11 +28,11 @@
     font-size: 36px;
     line-height: 125%;
 
-    @media (min-width: 769px) {
+    @media (min-width: $tablet) {
       font-size: 50px;
       line-height: 61px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
       font-size: 54px;
       line-height: 66px;
     }

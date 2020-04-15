@@ -6,37 +6,48 @@
     background-color: transparent;
     cursor: pointer;
 
-    @media (min-width: 769px) {
+    @media (min-width: $tablet) {
       display: none;
     }
   }
   &__inner {
     display: none;
-    @media (min-width: 769px) {
+    @media (min-width: $tablet) {
       display: flex;
     }
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
-
+    flex-direction: column;
     padding: 0;
     margin: 0;
     list-style: none;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+    }
   }
-  
+
   &__item {
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: 23px;
+
+      @media (min-width: $desktop) {
+        margin-right: 30px;
+      }
     }
   }
   &__link {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 15px;
     color: $default-color;
     text-decoration: none;
+
+    @media (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
-
-

@@ -1,10 +1,10 @@
 .about {
   padding: $section-pd 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: $tablet) {
     padding: $section-pd-sm 0;
   }
-  @media (min-width: 1023px) {
+  @media (min-width: $desktop) {
     padding: $section-pd-md 0;
   }
 
@@ -17,13 +17,13 @@
   &__item {
     width: auto;
 
-    @media (min-width: 767px) {
+    @media (min-width: $tablet) {
       width: 50%;
     }
   }
 
   &__text {
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
       padding: 44px 88px 0 0;
     }
   }

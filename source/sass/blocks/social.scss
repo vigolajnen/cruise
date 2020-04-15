@@ -8,7 +8,10 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 33px;
+      margin-right: 23px;
+      @media (min-width: $desktop) {
+        margin-right: 33px;
+      }
     }
   }
 }

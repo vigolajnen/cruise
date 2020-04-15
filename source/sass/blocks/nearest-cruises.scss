@@ -1,10 +1,10 @@
 .nearest-cruises {
   padding: $section-pd 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: $tablet) {
     padding: $section-pd-sm 0;
   }
-  @media (min-width: 1023px) {
+  @media (min-width: $desktop) {
     padding: $section-pd-md 0;
   }
 
@@ -12,21 +12,38 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    transition: 1s;
   }
 
   &__item {
+    flex-grow: 1;
+    flex-basis: 250px;
     width: 100%;
+
     box-sizing: border-box;
 
-    @media (min-width: 425px) {
+    @media (min-width: 547px) {
       width: calc(100% / 2 - 20px);
+
+      // max-width: 309px;
 
       &:not(:nth-child(2n)) {
         margin-right: 20px;
       }
     }
-    @media (min-width: 769px) {
+    @media (min-width: $tablet) {
+      width: calc(100% / 3 - 20px);
+
+      // max-width: 320px;
+
+      &:not(:nth-child(3n)) {
+        margin-right: 20px;
+      }
+    }
+    @media (min-width: $desktop) {
       width: calc(100% / 4 - 20px);
+
+      // max-width: 257px;
 
       &:not(:nth-child(4n)) {
         margin-right: 20px;
