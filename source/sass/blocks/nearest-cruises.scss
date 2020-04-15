@@ -1,11 +1,11 @@
 .nearest-cruises {
-  padding: $section-pd 0;
+  padding: $section-pd 0 45px;
 
   @media (min-width: $tablet) {
-    padding: $section-pd-sm 0;
+    padding: $section-pd-sm 0 80px;
   }
   @media (min-width: $desktop) {
-    padding: $section-pd-md 0;
+    padding: $section-pd-md 0 100px;
   }
 
   &__items {
@@ -18,8 +18,8 @@
   &__item {
     flex-grow: 1;
     flex-basis: 250px;
+    margin-bottom: 20px;
     width: 100%;
-
     box-sizing: border-box;
 
     @media (min-width: 547px) {
