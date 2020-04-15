@@ -1,0 +1,16 @@
+@font-face {
+  font-family: $mainFont;
+  font-display: auto;
+  src: url("../fonts/Montserrat.woff2") format("woff2"),
+    url("../fonts/Montserrat.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: $mainFontBold;
+  font-display: auto;
+  src: url("../fonts/Montserratbold.woff2") format("woff2"),
+    url("../fonts/Montserratbold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}

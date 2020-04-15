@@ -1,0 +1,36 @@
+.nearest-cruises {
+  padding: $section-pd 0;
+
+  @media (min-width: 769px) {
+    padding: $section-pd-sm 0;
+  }
+  @media (min-width: 1023px) {
+    padding: $section-pd-md 0;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__item {
+    width: 100%;
+    box-sizing: border-box;
+
+    @media (min-width: 425px) {
+      width: calc(100% / 2 - 20px);
+
+      &:not(:nth-child(2n)) {
+        margin-right: 20px;
+      }
+    }
+    @media (min-width: 769px) {
+      width: calc(100% / 4 - 20px);
+
+      &:not(:nth-child(4n)) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
