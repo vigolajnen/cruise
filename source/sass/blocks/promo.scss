@@ -5,7 +5,7 @@
 
   min-height: 650px;
 
-  background-image: url("../img/promo/promo.jpg");
+  background-image: url("../img/promo/promo-mob.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,17 +13,30 @@
 
   color: $default-color;
 
+  @media (min-width: 768px) {
+    background-image: url("../img/promo/promo-tablet.jpg");
+  }
+  @media (min-width: $desktop) {
+    background-image: url("../img/promo/promo.jpg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/promo/promo@2x.jpg");
+  }
+
   &__container {
     display: table-cell;
     vertical-align: middle;
+    transform: translateY(-8px);
 
     @media (min-width: $tablet) {
     }
     @media (min-width: $desktop) {
-      padding-left: 200px;
+      padding-left: 103px;
     }
   }
-  &__title {
+  & h1 {
+    margin: 0;
     font-weight: bold;
     font-size: 36px;
     line-height: 125%;
@@ -35,6 +48,21 @@
     @media (min-width: $desktop) {
       font-size: 54px;
       line-height: 66px;
+    }
+  }
+  & p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 140%;
+    transform: translateY(10px);
+
+    @media (min-width: $tablet) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 24px;
     }
   }
 }

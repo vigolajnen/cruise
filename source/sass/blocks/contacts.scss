@@ -5,7 +5,7 @@
     padding: $section-pd-sm 0;
   }
   @media (min-width: $desktop) {
-    padding: $section-pd-md 0;
+    padding: $section-pd-md 0 113px;
   }
   &__container {
     display: flex;
@@ -36,12 +36,13 @@
     @media (min-width: $tablet) {
       width: 50%;
       padding-left: 80px;
+      padding-top: 10px;
     }
   }
-  &__text {
+  & p {
+    margin: 0 0 33px 0;
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 33px;
   }
   &__list {
     padding: 0;
@@ -55,6 +56,11 @@
     color: $primary-color;
     text-decoration: none;
     box-sizing: border-box;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
 
     & span {
       width: 90%;

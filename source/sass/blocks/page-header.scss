@@ -6,15 +6,30 @@
   width: 100%;
   max-width: 100%;
   padding: 20px 0;
+  background-color: transparent;
 
   @media (min-width: $tablet) {
     padding: 35px 0;
   }
 
+  &--mob {
+    background-color: $default-color;
+
+    & .page-header__logo {
+      display: none;
+    }
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }

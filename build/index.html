@@ -16,13 +16,16 @@
         </a>
         <nav class="navigation">
           <button class="navigation__toggle navigation__toggle--closed" type="button" aria-label="Открыть меню">
-            <svg width="25" viewbox="0 0 10 10" fill="#f9fbfd">
-              <rect width="10" height="1.5" x="0" y="0"></rect>
-              <rect width="10" height="1.5" x="0" y="3"></rect>
-              <rect width="10" height="1.5" x="0" y="6"></rect>
+            <svg class="navigation__icon" width="25" viewbox="0 0 10 10" fill="#f9fbfd">
+              <rect class="navigation__line navigation__line--1" width="10" height="1.5" x="0" y="0"></rect>
+              <rect class="navigation__line navigation__line--2" width="10" height="1.5" x="0" y="3"></rect>
+              <rect class="navigation__line navigation__line--3" width="10" height="1.5" x="0" y="6"></rect>
             </svg>
           </button>
           <div class="navigation__inner">
+            <a class="navigation__logo logo">
+              <img class="logo__pic" src="img/logo-blue.svg" width="70" height="38" alt="Логотип компании">
+            </a>
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a class="navigation__link" href="#">Преимущества</a>
@@ -42,16 +45,18 @@
       </div>
     </header>
     <section class="promo">
-      <div class="promo__container container">
-        <h1 class="promo__title">Круизы в Антарктику</h1>
-        <div class="promo__text">Волшебный мир айсбергов и пингвинов</div>
+      <div class="promo__container">
+        <div class="container">
+          <h1>Круизы в Антарктику</h1>
+          <p>Волшебный мир айсбергов и пингвинов</p>
+        </div>
       </div>
     </section>
     <section class="about">
       <div class="about__container container">
         <div class="about__item">
           <div class="about__text">
-            <h2 class="about__title title">Путешествие на край Земли</h2>
+            <h2 class="title">Путешествие на край Земли</h2>
             <p>
               Это волшебное путешествие поможет вам познакомиться поближе с
               удивительным миром Антарктики. Наш круизный лайнер отвезет вас на
@@ -64,7 +69,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/about/penguins.jpg">
             <source media="(min-width: 768px)" srcset="img/about/penguins-tablet.jpg">
-            <img class="logo__pic" src="img/about/penguins-mob.jpg" width="560" height="301" alt="Пингвины">
+            <img src="img/about/penguins-mob.jpg" width="560" height="301" alt="Пингвины">
           </picture>
         </div>
       </div>
@@ -74,36 +79,36 @@
         <h2 class="title title--center">Преимущества</h2>
         <ul class="advantage__list">
           <li class="advantage__item">
-            <svg width="27" height="32">
+            <svg class="advantage__icon" width="27" height="32">
               <use xlink:href="img/sprite_auto.svg#icon-adv-liner"></use>
             </svg>
-            <h3 class="advantage__name">Небольшой круизный лайнер</h3>
-            <div class="advantage__text">
+            <h3>Небольшой круизный лайнер</h3>
+            <p>
               Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет
               избежать шума и очередей и даст возможность насладиться видами и
               природой.
-            </div>
+            </p>
           </li>
           <li class="advantage__item">
-            <svg width="38" height="21">
+            <svg class="advantage__icon" width="38" height="21">
               <use xlink:href="img/sprite_auto.svg#icon-adv-all"></use>
             </svg>
-            <h3 class="advantage__name">Система все включено</h3>
-            <div class="advantage__text">
+            <h3>Система все включено</h3>
+            <p>
               Все наши круизы работают по системе “Все Включено”. Великолепные
               блюда и безлимитный бар доступны для вас 24 часа.
-            </div>
+            </p>
           </li>
           <li class="advantage__item">
-            <svg width="42" height="15">
+            <svg class="advantage__icon" width="42" height="15">
               <use xlink:href="img/sprite_auto.svg#icon-adv-zodiac"></use>
             </svg>
-            <h3 class="advantage__name">Экскурсионные туры на Zodiac</h3>
-            <div class="advantage__text">
+            <h3>Экскурсионные туры на Zodiac</h3>
+            <p>
               Экскурсионные туры к берегам Антарктиды совершаются на
               оборудованных лодках типа Zodiac в сопровождении опытных
               экскурсоводов.
-            </div>
+            </p>
           </li>
         </ul>
       </div>
@@ -116,7 +121,9 @@
             <div class="cruise">
               <img class="cruise__pic" src="img/cruises/cruise-1.jpg" alt="Круиз Астория">
               <div class="cruise__inner">
-                <h3 class="cruise__title">Круиз “Астория”</h3>
+                <h3 class="cruise__title">
+                  Круиз “Астория” Круиз “Астория” Круиз “Астория”
+                </h3>
                 <div class="cruise__info">
                   <div class="cruise__item">
                     <div class="cruise__item-title">Маршрут</div>
@@ -355,13 +362,13 @@
     <section class="booking">
       <div class="booking__container container">
         <div class="booking__info">
-          <h2 class="booking__title">Раннее бронирование</h2>
-          <div class="booking__text">
+          <h2>Раннее бронирование</h2>
+          <p>
             Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%
-          </div>
+          </p>
         </div>
         <div class="booking__form">
-          <form action="" class="form">
+          <form action="" class="booking__wrapper form">
             <div class="form__title">
               Оставьте заявку и мы свяжемся с вами в ближайшее время
             </div>
@@ -372,10 +379,8 @@
             <label for="email" class="visually-hidden">Валерия</label>
             <input id="email" class="form__val" type="email" placeholder="grishaewa.lera@gmail.com">
 
-            <label for="check" class="form__label form__label--check">
-              <input id="check" type="checkbox" name="check">
-              Я согласен на обработку моих персональных данных</label>
-
+            <input id="check" class="form__val form__val--check" type="checkbox" name="check">
+            <label for="check" class="form__label form__label--check">Я согласен на обработку моих персональных данных</label>
             <button class="form__button" type="submit">Оставить заявку</button>
           </form>
         </div>
@@ -387,10 +392,10 @@
           <img src="img/map.jpg" alt="map">
         </div>
         <div class="contacts__info">
-          <div class="contacts__text">
+          <p>
             У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и
             мы вам все расскажем.
-          </div>
+          </p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__link" href="#">
@@ -460,6 +465,7 @@
     </footer>
     <script src="
     js/vendor/svg4everybody.js"></script>
+    <script src="js/script.js"></script>
     <script>
       svg4everybody();
     </script>

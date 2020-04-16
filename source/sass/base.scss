@@ -9,3 +9,8 @@ body {
   color: $primary-color;
   scroll-behavior: smooth;
 }
+
+.overlay {
+  overflow: hidden;
+  height: 100vh;
+}

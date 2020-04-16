@@ -4,13 +4,15 @@
   flex-direction: column;
   justify-content: space-between;
 
-  min-height: 385px;
+  min-height: 386px;
 
   box-sizing: border-box;
 
+  &:focus,
   &:hover {
     & .cruise__info {
       display: block;
+      padding: 0 25px;
     }
     & .cruise__inner {
       position: absolute;
@@ -19,6 +21,13 @@
       height: 100%;
       color: $default-color;
       background-color: $primary-color;
+      box-sizing: border-box;
+    }
+    & .cruise__title {
+      padding: 30px 25px 12px;
+
+      overflow: hidden;
+      max-height: 60px;
     }
   }
 
@@ -37,23 +46,23 @@
     padding: 0 30px;
   }
   &__inner {
-    position: absolute;
-    top: 80%;
-    left: 0;
+    position: relative;
     margin-top: auto;
   }
   &__title {
-    padding: 0 30px;
+    margin: 0;
+    padding: 20px 35px;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
     color: $default-color;
+    box-sizing: border-box;
   }
 
   &__link {
     display: block;
-
-    padding: 15px;
+    margin-top: 25px;
+    padding: 10px;
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
@@ -63,6 +72,11 @@
     color: $primary-color;
     background-color: $default-color;
     text-decoration: none;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
   }
   &__item {
     margin-bottom: 10px;
@@ -70,7 +84,11 @@
     line-height: 140%;
   }
   &__item-title {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     font-weight: 500;
+  }
+  &__item-val {
+    overflow: hidden;
+    max-height: 40px;
   }
 }

@@ -1,5 +1,10 @@
 .navigation {
   &__toggle {
+    z-index: 5;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    height: 27px;
     display: block;
     border: none;
     border-radius: 0;
@@ -9,11 +14,81 @@
     @media (min-width: $tablet) {
       display: none;
     }
+
+    &--closed {
+      & .navigation__icon {
+        fill: $default-color;
+      }
+
+      & .navigation__line {
+        &--1 {
+          transform: rotate(0deg) translate(0%, 0%);
+        }
+        &--2 {
+          opacity: 1;
+        }
+        &--3 {
+          transform: rotate(0deg) translate(0%, 0%);
+        }
+      }
+    }
+
+    &--opened {
+      & .navigation__icon {
+        fill: $primary-color;
+      }
+      & .navigation__line {
+        &--1 {
+          transform: rotate(45deg) translate(20%, -5%);
+        }
+        &--2 {
+          opacity: 0;
+        }
+        &--3 {
+          transform: rotate(-45deg) translate(-50%, 5%);
+        }
+      }
+    }
+  }
+  &__header {
+    margin-bottom: 20px;
+  }
+  &__logo {
+    display: none;
   }
   &__inner {
     display: none;
     @media (min-width: $tablet) {
       display: flex;
+    }
+
+    &--active {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px;
+      background-color: $default-color;
+
+      & .navigation__logo {
+        display: block;
+        margin-bottom: 30px;
+      }
+
+      & .navigation__item {
+        margin-bottom: 30px;
+      }
+
+      & .navigation__link {
+        font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+        color: $primary-color;
+      }
+    }
+    &--closed {
+      display: none;
     }
   }
   &__list {
@@ -34,7 +109,7 @@
       margin-right: 23px;
 
       @media (min-width: $desktop) {
-        margin-right: 30px;
+        margin-right: 32px;
       }
     }
   }
@@ -44,6 +119,11 @@
     line-height: 15px;
     color: $default-color;
     text-decoration: none;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
 
     @media (min-width: $desktop) {
       font-size: 16px;
