@@ -52,6 +52,9 @@ body {
       padding: 0 45px; } }
   @media (min-width: 1024px) {
     .container {
+      padding: 0 50px; } }
+  @media (min-width: 1200px) {
+    .container {
       padding: 0 103px; } }
 
 .page-header {
@@ -243,6 +246,27 @@ body {
       font-size: 16px;
       line-height: 20px; } }
 
+.navigation--footer .navigation__item {
+  margin-bottom: 8px; }
+  @media (min-width: 768px) {
+    .navigation--footer .navigation__item {
+      margin-bottom: 0; }
+      .navigation--footer .navigation__item:not(:last-child) {
+        margin-right: 23px; } }
+  @media (min-width: 1024px) {
+    .navigation--footer .navigation__item:not(:last-child) {
+      margin-right: 32px; } }
+
+@media (min-width: 768px) {
+  .navigation--footer .navigation__link {
+    font-size: 12px;
+    line-height: 15px; } }
+
+@media (min-width: 1024px) {
+  .navigation--footer .navigation__link {
+    font-size: 16px;
+    line-height: 20px; } }
+
 .promo {
   position: relative;
   display: table;
@@ -278,7 +302,7 @@ body {
             transform: translateY(-8px); }
     @media (min-width: 1024px) {
       .promo__container {
-        padding-left: 103px; } }
+        padding-left: 95px; } }
   .promo h1 {
     margin: 0;
     font-weight: bold;
@@ -311,10 +335,10 @@ body {
   padding: 57px 0; }
   @media (min-width: 768px) {
     .about {
-      padding: 90px 0; } }
+      padding: 90px 0 60px; } }
   @media (min-width: 1024px) {
     .about {
-      padding: 118px 0; } }
+      padding: 110px 0 105px; } }
   .about__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -329,23 +353,31 @@ body {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
-  .about__item {
+  .about__info {
     width: auto; }
-    @media (min-width: 767px) {
-      .about__item {
+    @media (min-width: 768px) {
+      .about__info {
+        width: 52%; } }
+    @media (min-width: 1024px) {
+      .about__info {
         width: 50%; } }
-    .about__item img {
-      max-width: 100%;
-      width: 100%;
-      height: auto;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
-      @media (min-width: 768px) {
-        .about__item img {
-          padding: 10px 0 0 20px;
-          width: 100%; } }
+  @media (min-width: 768px) {
+    .about__pic {
+      width: 48%; } }
+  @media (min-width: 1024px) {
+    .about__pic {
+      width: 50%; } }
+  .about__pic img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    @media (min-width: 768px) {
+      .about__pic img {
+        padding-top: 12px; } }
   @media (min-width: 520px) {
     .about__text {
       padding-right: 45px; } }
@@ -369,6 +401,7 @@ body {
         font-size: 26px; } }
     @media (min-width: 1024px) {
       .about__text h2 {
+        margin-bottom: 28px;
         font-size: 28px;
         line-height: 150%;
         max-width: 100%; } }
@@ -389,9 +422,11 @@ body {
   background-color: #dde9f5; }
   @media (min-width: 768px) {
     .advantage {
+      padding: 90px 0 100px;
       background-image: url("../img/advantage/advantage-tablet.jpg"); } }
   @media (min-width: 1024px) {
     .advantage {
+      padding: 110px 0 135px;
       background-image: url("../img/advantage/advantage.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
     .advantage {
@@ -402,12 +437,6 @@ body {
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .advantage {
       background-image: url("../img/advantage/advantage@2x.jpg"); } }
-  @media (min-width: 768px) {
-    .advantage {
-      padding: 100px 0; } }
-  @media (min-width: 1024px) {
-    .advantage {
-      padding: 120px 0; } }
   @media (min-width: 600px) {
     .advantage__container {
       padding: 0 45px; } }
@@ -419,9 +448,11 @@ body {
     max-width: 190px;
     font-size: 24px;
     line-height: 140%;
-    font-weight: 600; }
+    font-weight: 600;
+    text-align: center; }
     @media (min-width: 768px) {
       .advantage__container h2 {
+        margin-bottom: 50px;
         max-width: 205px;
         font-size: 26px; } }
     @media (min-width: 1024px) {
@@ -461,10 +492,13 @@ body {
         width: calc(100% / 3 - 25px); } }
     @media (min-width: 768px) {
       .advantage__item {
-        padding: 30px; } }
+        padding: 24px 18px; } }
     @media (min-width: 1024px) {
       .advantage__item {
-        padding: 30px 35px; } }
+        width: calc(100% / 3 - 40px);
+        padding: 30px 25px; }
+        .advantage__item:not(:last-child) {
+          margin-right: 40px; } }
     .advantage__item h3 {
       max-width: 200px;
       margin: 0;
@@ -472,11 +506,17 @@ body {
       font-weight: 500;
       font-size: 18px;
       line-height: 150%; }
+      @media (min-width: 1024px) {
+        .advantage__item h3 {
+          max-width: 100%; } }
     .advantage__item p {
       padding-right: 15px;
       margin: 0;
       font-size: 14px;
       line-height: 140%; }
+      @media (min-width: 768px) {
+        .advantage__item p {
+          padding-right: 0; } }
   .advantage__icon {
     height: 27px;
     margin-bottom: 11px; }
@@ -488,10 +528,10 @@ body {
   padding: 57px 0 35px; }
   @media (min-width: 768px) {
     .nearest-cruises {
-      padding: 100px 0 80px; } }
+      padding: 94px 0 70px; } }
   @media (min-width: 1024px) {
     .nearest-cruises {
-      padding: 120px 0 90px; } }
+      padding: 115px 0 90px; } }
   .nearest-cruises h2 {
     margin: 0 auto 32px;
     font-size: 24px;
@@ -500,7 +540,8 @@ body {
     text-align: center; }
     @media (min-width: 768px) {
       .nearest-cruises h2 {
-        max-width: 205px;
+        margin-bottom: 50px;
+        max-width: 100%;
         font-size: 26px; } }
     @media (min-width: 1024px) {
       .nearest-cruises h2 {
@@ -528,7 +569,7 @@ body {
         -webkit-column-gap: 30px;
            -moz-column-gap: 30px;
                 column-gap: 30px;
-        padding: 0 60px; } }
+        padding: 0 20px; } }
     @media (min-width: 1024px) {
       .nearest-cruises__items {
         -webkit-column-count: 4;
@@ -603,6 +644,9 @@ body {
     color: #f9fbfd;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
+    @media (min-width: 768px) {
+      .cruise__title {
+        padding: 27px 31px; } }
   .cruise__link {
     display: block;
     margin-top: 25px;
@@ -638,9 +682,11 @@ body {
   background-color: #daf2fe; }
   @media (min-width: 768px) {
     .booking {
+      padding: 88px 0 100px;
       background-image: url("../img/booking/booking-tablet.jpg"); } }
   @media (min-width: 1024px) {
     .booking {
+      padding: 48px 0 50px;
       background-image: url("../img/booking/booking.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
     .booking {
@@ -672,6 +718,8 @@ body {
     text-align: center; }
     @media (min-width: 768px) {
       .booking h2 {
+        margin-bottom: 5px;
+        max-width: 100%;
         font-size: 34px;
         line-height: 150%; } }
     @media (min-width: 1024px) {
@@ -681,7 +729,7 @@ body {
         line-height: 150%;
         text-align: left; } }
   .booking p {
-    margin: 0 auto 33px;
+    margin: 0 auto;
     max-width: 257px;
     font-size: 16px;
     line-height: 140%;
@@ -691,25 +739,26 @@ body {
         max-width: 352px; } }
     @media (min-width: 768px) {
       .booking p {
-        margin: 0;
-        margin-bottom: 60px;
         font-size: 18px;
         line-height: 150%; } }
     @media (min-width: 1024px) {
       .booking p {
+        margin-right: auto;
+        margin-left: 0;
         text-align: left; } }
   .booking__info {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 33px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     @media (min-width: 768px) {
       .booking__info {
-        width: 50%; } }
+        margin-bottom: 52px; } }
     @media (min-width: 1024px) {
       .booking__info {
+        width: 50%;
         padding-left: 60px;
-        padding-top: 60px; } }
+        padding-top: 48px; } }
   .booking__wrapper {
     max-width: 305px; }
   .booking__form {
@@ -717,21 +766,19 @@ body {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    @media (min-width: 768px) {
-      .booking__form {
-        width: 50%; } }
     @media (min-width: 1024px) {
       .booking__form {
-        padding-left: 117px; } }
+        width: 50%;
+        padding-left: 75px; } }
 
 .contacts {
   padding: 60px 0 50px; }
   @media (min-width: 768px) {
     .contacts {
-      padding: 100px 0; } }
+      padding: 100px 0 75px; } }
   @media (min-width: 1024px) {
     .contacts {
-      padding: 120px 0 113px; } }
+      padding: 120px 0 107px; } }
   .contacts__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -768,11 +815,12 @@ body {
     @media (min-width: 768px) {
       .contacts__info {
         width: 50%;
-        padding-left: 30px;
+        padding-left: 13px;
         padding-top: 10px; } }
     @media (min-width: 1024px) {
       .contacts__info {
-        padding-left: 80px; } }
+        padding-left: 82px;
+        padding-top: 25px; } }
   .contacts p {
     margin: 0 0 29px 0;
     font-size: 18px;
@@ -785,6 +833,9 @@ body {
     list-style: none; }
   .contacts__item:not(:last-child) {
     margin-bottom: 18px; }
+  @media (min-width: 1024px) {
+    .contacts__item:not(:last-child) {
+      margin-bottom: 25px; } }
   .contacts__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -823,9 +874,12 @@ body {
         margin-right: 23px; } }
     @media (min-width: 1024px) {
       .social__item:not(:last-child) {
-        margin-right: 33px; } }
+        margin-right: 25px; } }
   .social__item svg {
     height: 16px; }
+    @media (min-width: 1024px) {
+      .social__item svg {
+        height: 20px; } }
 
 .form {
   margin: 0 auto;
@@ -848,6 +902,9 @@ body {
     line-height: 140%;
     color: #f9fbfd;
     text-align: center; }
+    @media (min-width: 768px) {
+      .form__title {
+        margin-bottom: 30px; } }
   .form__val {
     margin-bottom: 20px;
     padding: 11px 20px;
@@ -875,6 +932,9 @@ body {
     color: #f9fbfd;
     font-size: 10px;
     line-height: 130%; }
+    @media (min-width: 768px) {
+      .form__label {
+        margin-bottom: 35px; } }
 
 .form__val[type="checkbox"]:not(:checked),
 .form__val[type="checkbox"]:checked {
@@ -890,13 +950,13 @@ body {
 /* checkbox aspect */
 .form__val[type="checkbox"]:not(:checked) + label:before,
 .form__val[type="checkbox"]:checked + label:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 1.5em;
   height: 1.5em;
-  border: 2px solid #101A56;
+  border: 2px solid #101a56;
   background: #f9fbfd;
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -905,15 +965,15 @@ body {
 /* checked mark aspect */
 .form__val[type="checkbox"]:not(:checked) + label:after,
 .form__val[type="checkbox"]:checked + label:after {
-  content: '\2713\0020';
+  content: "\2713\0020";
   position: absolute;
-  top: .15em;
-  left: .22em;
+  top: 0.15em;
+  left: 0.22em;
   font-size: 1.6em;
   line-height: 0.8;
   color: #011c40;
-  -webkit-transition: all .2s;
-  transition: all .2s; }
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
 
 /* checked mark aspect changes */
 .form__val[type="checkbox"]:not(:checked) + label:after {
@@ -929,6 +989,9 @@ body {
 .page-footer {
   padding: 40px 0;
   background-color: #011c40; }
+  @media (min-width: 768px) {
+    .page-footer {
+      padding: 47px 0; } }
   @media (min-width: 1024px) {
     .page-footer {
       padding: 50px 0; } }
@@ -967,9 +1030,8 @@ body {
     margin-bottom: 15px; }
     @media (min-width: 768px) {
       .page-footer__nav {
-        margin-bottom: 0; } }
-    .page-footer__nav li {
-      margin-bottom: 8px; }
+        margin-bottom: 0;
+        margin-top: 0; } }
   @media (min-width: 768px) {
     .page-footer__social {
       margin-left: auto; } }

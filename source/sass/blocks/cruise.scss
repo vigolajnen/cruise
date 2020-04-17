@@ -58,6 +58,9 @@
     line-height: 150%;
     color: $default-color;
     box-sizing: border-box;
+    @media (min-width: $tablet) {
+      padding: 27px 31px;
+    }
   }
 
   &__link {

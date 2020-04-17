@@ -2,10 +2,10 @@
   padding: 57px 0 35px;
 
   @media (min-width: $tablet) {
-    padding: $section-pd-sm 0 80px;
+    padding: 94px 0 70px;
   }
   @media (min-width: $desktop) {
-    padding: $section-pd-md 0 90px;
+    padding: 115px 0 90px;
   }
 
   & h2 {
@@ -16,7 +16,8 @@
     text-align: center;
 
     @media (min-width: $tablet) {
-      max-width: 205px;
+      margin-bottom: 50px;
+      max-width: 100%;
       font-size: 26px;
     }
     @media (min-width: $desktop) {
@@ -39,7 +40,7 @@
 
     @media (min-width: 767px) {
       column-gap: 30px;
-      padding: 0 60px;
+      padding: 0 20px;
     }
     @media (min-width: $desktop) {
       column-count: 4;

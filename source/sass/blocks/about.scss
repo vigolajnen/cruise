@@ -2,10 +2,10 @@
   padding: 57px 0;
 
   @media (min-width: $tablet) {
-    padding: 90px 0;
+    padding: 90px 0 60px;
   }
   @media (min-width: $desktop) {
-    padding: 118px 0;
+    padding: 110px 0 105px;
   }
 
   &__container {
@@ -18,12 +18,23 @@
     }
   }
 
-  &__item {
+  &__info {
     width: auto;
-    @media (min-width: 767px) {
+    @media (min-width: $tablet) {
+      width: 52%;
+    }
+    @media (min-width: $desktop) {
       width: 50%;
     }
+  }
 
+  &__pic {
+    @media (min-width: $tablet) {
+      width: 48%;
+    }
+    @media (min-width: $desktop) {
+      width: 50%;
+    }
     & img {
       max-width: 100%;
       width: 100%;
@@ -32,8 +43,7 @@
       box-sizing: border-box;
 
       @media (min-width: $tablet) {
-        padding: 10px 0 0 20px;
-        width: 100%;
+       padding-top: 12px;
       }
     }
   }
@@ -63,6 +73,7 @@
         font-size: 26px;
       }
       @media (min-width: $desktop) {
+        margin-bottom: 28px;
         font-size: 28px;
         line-height: 150%;
         max-width: 100%;

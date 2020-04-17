@@ -7,10 +7,12 @@
   background-repeat: no-repeat;
   background-color: #daf2fe;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
+    padding: 88px 0 100px;
     background-image: url("../img/booking/booking-tablet.jpg");
   }
   @media (min-width: $desktop) {
+    padding: 48px 0 50px;
     background-image: url("../img/booking/booking.jpg");
   }
 
@@ -41,6 +43,8 @@
     text-align: center;
 
     @media (min-width: $tablet) {
+      margin-bottom: 5px;
+      max-width: 100%;
       font-size: 34px;
       line-height: 150%;
     }
@@ -52,7 +56,7 @@
     }
   }
   & p {
-    margin: 0 auto 33px;
+    margin: 0 auto;
     max-width: 257px;
     font-size: 16px;
     line-height: 140%;
@@ -61,27 +65,27 @@
       max-width: 352px;
     }
     @media (min-width: $tablet) {
-      margin: 0;
-      margin-bottom: 60px;
-
       font-size: 18px;
       line-height: 150%;
     }
     @media (min-width: $desktop) {
+      margin-right: auto;
+      margin-left: 0;
       text-align: left;
     }
   }
   &__info {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 33px;
     box-sizing: border-box;
 
     @media (min-width: $tablet) {
-      width: 50%;
+      margin-bottom: 52px;
     }
     @media (min-width: $desktop) {
+      width: 50%;
       padding-left: 60px;
-      padding-top: 60px;
+      padding-top: 48px;
     }
   }
 
@@ -94,10 +98,10 @@
     width: 100%;
     box-sizing: border-box;
     @media (min-width: $tablet) {
-      width: 50%;
     }
     @media (min-width: $desktop) {
-      padding-left: 117px;
+      width: 50%;
+      padding-left: 75px;
     }
   }
 }

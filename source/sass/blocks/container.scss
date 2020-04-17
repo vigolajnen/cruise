@@ -9,6 +9,9 @@
     padding: 0 45px;
   }
   @media (min-width: $desktop) {
+    padding: 0 50px;
+  }
+  @media (min-width: 1200px) {
     padding: 0 103px;
   }
 }

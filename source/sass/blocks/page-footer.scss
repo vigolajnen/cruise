@@ -2,6 +2,9 @@
   padding: 40px 0;
   background-color: $primary-color;
 
+  @media (min-width: $tablet) {
+    padding: 47px 0;
+  }
   @media (min-width: $desktop) {
     padding: 50px 0;
   }
@@ -29,10 +32,7 @@
     margin-bottom: 15px;
     @media (min-width: $tablet) {
       margin-bottom: 0;
-    }
-
-    & li {
-      margin-bottom: 8px;
+      margin-top: 0;
     }
   }
   &__social {

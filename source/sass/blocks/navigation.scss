@@ -139,3 +139,31 @@
     }
   }
 }
+
+.navigation--footer {
+  & .navigation__item {
+    margin-bottom: 8px;
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-right: 23px;
+      }
+    }
+    @media (min-width: $desktop) {
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+  & .navigation__link {
+    @media (min-width: $tablet) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

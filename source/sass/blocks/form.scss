@@ -17,6 +17,9 @@
     line-height: 140%;
     color: #f9fbfd;
     text-align: center;
+    @media (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
   }
 
   &__val {
@@ -43,7 +46,7 @@
 
     &:focus,
     &:hover {
-      opacity: 0.5
+      opacity: 0.5;
     }
   }
 
@@ -52,6 +55,9 @@
     color: $default-color;
     font-size: 10px;
     line-height: 130%;
+    @media (min-width: $tablet) {
+      margin-bottom: 35px;
+    }
   }
 }
 .form__val[type="checkbox"]:not(:checked),
@@ -69,26 +75,28 @@
 /* checkbox aspect */
 .form__val[type="checkbox"]:not(:checked) + label:before,
 .form__val[type="checkbox"]:checked + label:before {
-  content: '';
+  content: "";
   position: absolute;
-  left: 0; top: 0;
-  width: 1.5em; 
+  left: 0;
+  top: 0;
+  width: 1.5em;
   height: 1.5em;
-  border: 2px solid #101A56;
+  border: 2px solid #101a56;
   background: $default-color;
   border-radius: 0;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 /* checked mark aspect */
 .form__val[type="checkbox"]:not(:checked) + label:after,
 .form__val[type="checkbox"]:checked + label:after {
-  content: '\2713\0020';
+  content: "\2713\0020";
   position: absolute;
-  top: .15em; left: .22em;
+  top: 0.15em;
+  left: 0.22em;
   font-size: 1.6em;
   line-height: 0.8;
   color: $primary-color;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 /* checked mark aspect changes */
 .form__val[type="checkbox"]:not(:checked) + label:after {

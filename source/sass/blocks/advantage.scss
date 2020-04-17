@@ -7,10 +7,12 @@
   background-repeat: no-repeat;
   background-color: #dde9f5;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
+    padding: 90px 0 100px;
     background-image: url("../img/advantage/advantage-tablet.jpg");
   }
   @media (min-width: $desktop) {
+    padding: 110px 0 135px;
     background-image: url("../img/advantage/advantage.jpg");
   }
 
@@ -26,12 +28,6 @@
     background-image: url("../img/advantage/advantage@2x.jpg");
   }
 
-  @media (min-width: $tablet) {
-    padding: $section-pd-sm 0;
-  }
-  @media (min-width: $desktop) {
-    padding: $section-pd-md 0;
-  }
   &__container {
     @media (min-width: 600px) {
       padding: 0 45px;
@@ -47,8 +43,10 @@
       font-size: 24px;
       line-height: 140%;
       font-weight: 600;
+      text-align: center;
 
       @media (min-width: $tablet) {
+        margin-bottom: 50px;
         max-width: 205px;
         font-size: 26px;
       }
@@ -90,10 +88,14 @@
       width: calc(100% / 3 - 25px);
     }
     @media (min-width: $tablet) {
-      padding: 30px;
+      padding: 24px 18px;
     }
     @media (min-width: $desktop) {
-      padding: 30px 35px;
+      width: calc(100% / 3 - 40px);
+      padding: 30px 25px;
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
     }
 
     & h3 {
@@ -103,6 +105,9 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;
+      @media (min-width: $desktop) {
+        max-width: 100%;
+      }
     }
 
     & p {
@@ -110,6 +115,9 @@
       margin: 0;
       font-size: 14px;
       line-height: 140%;
+      @media (min-width: $tablet) {
+        padding-right: 0;
+      }
     }
   }
   &__icon {
