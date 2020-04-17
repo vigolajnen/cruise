@@ -114,23 +114,6 @@ body {
     -o-object-fit: cover;
        object-fit: cover; }
 
-.title {
-  margin: 0;
-  margin-bottom: 56px;
-  max-width: 190px;
-  font-size: 24px;
-  line-height: 140%;
-  font-weight: 600; }
-  @media (min-width: 768px) {
-    .title {
-      max-width: 205px;
-      font-size: 26px; } }
-  @media (min-width: 1024px) {
-    .title {
-      font-size: 28px;
-      line-height: 150%;
-      max-width: 100%; } }
-
 .navigation__toggle {
   z-index: 5;
   position: absolute;
@@ -330,6 +313,17 @@ body {
       .promo p {
         font-size: 20px;
         line-height: 24px; } }
+
+@supports (display: flex) {
+  .promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .about {
   padding: 57px 0; }
@@ -604,11 +598,18 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .cruise:focus .cruise__info, .cruise:hover .cruise__info {
-    display: block;
-    padding: 0 25px; }
+    height: auto;
+    opacity: 1;
+    padding: 0 25px;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s; }
   .cruise:focus .cruise__inner, .cruise:hover .cruise__inner {
     position: absolute;
     top: 0;
+    left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-top: 0;
     width: 100%;
     height: 100%;
@@ -629,12 +630,25 @@ body {
     -o-object-fit: cover;
        object-fit: cover; }
   .cruise__info {
-    display: none;
     position: relative;
+    height: 0;
+    opacity: 0;
     padding: 0 30px; }
   .cruise__inner {
     position: relative;
-    margin-top: auto; }
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 386px;
+    min-height: 100%; }
   .cruise__title {
     margin: 0;
     padding: 20px 35px;

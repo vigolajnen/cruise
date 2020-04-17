@@ -11,12 +11,16 @@
   &:focus,
   &:hover {
     & .cruise__info {
-      display: block;
+      height: auto;
+      opacity: 1;
       padding: 0 25px;
+      transition: opacity 1s;
     }
     & .cruise__inner {
       position: absolute;
       top: 0;
+      left: 0;
+      justify-content: flex-start;
       margin-top: 0;
       width: 100%;
       height: 100%;
@@ -41,14 +45,19 @@
     object-fit: cover;
   }
   &__info {
-    display: none;
     position: relative;
-
+    height: 0;
+    opacity: 0;
     padding: 0 30px;
   }
   &__inner {
     position: relative;
-    margin-top: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 386px;
+    min-height: 100%;
   }
   &__title {
     margin: 0;
