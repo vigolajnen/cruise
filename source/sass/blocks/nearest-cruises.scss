@@ -1,11 +1,29 @@
 .nearest-cruises {
-  padding: $section-pd 0 45px;
+  padding: 57px 0 35px;
 
   @media (min-width: $tablet) {
     padding: $section-pd-sm 0 80px;
   }
   @media (min-width: $desktop) {
     padding: $section-pd-md 0 90px;
+  }
+
+  & h2 {
+    margin: 0 auto 32px;
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 600;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      max-width: 205px;
+      font-size: 26px;
+    }
+    @media (min-width: $desktop) {
+      font-size: 28px;
+      line-height: 150%;
+      max-width: 100%;
+    }
   }
 
   &__items {

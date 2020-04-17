@@ -1,5 +1,5 @@
 .advantage {
-  padding: $section-pd 0;
+  padding: 60px 0;
 
   background-image: url("../img/advantage/advantage-mob.jpg");
   background-size: cover;
@@ -12,6 +12,14 @@
   }
   @media (min-width: $desktop) {
     background-image: url("../img/advantage/advantage.jpg");
+  }
+
+  @media (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    background-image: url("../img/advantage/advantage-mob@2x.jpg");
+  }
+
+  @media (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
+    background-image: url("../img/advantage/advantage-tablet@2x.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -31,6 +39,25 @@
     @media (min-width: $desktop) {
       padding: 0 103px;
     }
+
+    & h2 {
+      margin: 0 auto 30px;
+
+      max-width: 190px;
+      font-size: 24px;
+      line-height: 140%;
+      font-weight: 600;
+
+      @media (min-width: $tablet) {
+        max-width: 205px;
+        font-size: 26px;
+      }
+      @media (min-width: $desktop) {
+        font-size: 28px;
+        line-height: 150%;
+        max-width: 100%;
+      }
+    }
   }
   &__list {
     display: flex;
@@ -43,7 +70,7 @@
   }
   &__item {
     flex-grow: 1;
-    padding: 25px;
+    padding: 25px 18px;
     background-color: #f9fbfd;
     width: auto;
     box-sizing: border-box;
@@ -54,7 +81,7 @@
 
     @media (max-width: 754px) {
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 27px;
         margin-right: 0;
       }
     }
@@ -70,6 +97,7 @@
     }
 
     & h3 {
+      max-width: 200px;
       margin: 0;
       margin-bottom: 10px;
       font-weight: 500;
@@ -85,7 +113,13 @@
     }
   }
   &__icon {
-    height: 32px;
-    margin-bottom: 10px;
+    height: 27px;
+    margin-bottom: 11px;
+
+    @media (min-width: $tablet) {
+    }
+    @media (min-width: $desktop) {
+      height: 32px;
+    }
   }
 }

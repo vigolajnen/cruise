@@ -1,5 +1,5 @@
 .contacts {
-  padding: $section-pd 0;
+  padding: 60px 0 50px;
 
   @media (min-width: $tablet) {
     padding: $section-pd-sm 0;
@@ -24,6 +24,7 @@
 
     & img {
       max-width: 100%;
+      width: 100%;
       height: auto;
       object-fit: cover;
     }
@@ -35,24 +36,36 @@
 
     @media (min-width: $tablet) {
       width: 50%;
-      padding-left: 80px;
+      padding-left: 30px;
       padding-top: 10px;
+    }
+    @media (min-width: $desktop) {
+      padding-left: 80px;
     }
   }
   & p {
-    margin: 0 0 33px 0;
+    margin: 0 0 29px 0;
     font-size: 18px;
+    line-height: 150%;
     font-weight: 500;
   }
   &__list {
     padding: 0;
     margin: 0;
+    margin-bottom: 35px;
     list-style: none;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
   }
   &__link {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 150%;
     color: $primary-color;
     text-decoration: none;
     box-sizing: border-box;
@@ -68,6 +81,6 @@
     }
   }
   &__icon {
-    margin-right: 15px;
+    margin-right: 9px;
   }
 }

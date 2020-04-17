@@ -8,10 +8,17 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 23px;
+      margin-right: 18px;
+      @media (min-width: $tablet) {
+        margin-right: 23px;
+      }
       @media (min-width: $desktop) {
         margin-right: 33px;
       }
+    }
+
+    & svg {
+      height: 16px;
     }
   }
 }

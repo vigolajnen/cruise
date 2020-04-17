@@ -3,7 +3,7 @@
   display: table;
   width: 100%;
 
-  min-height: 650px;
+  min-height: 502px;
 
   background-image: url("../img/promo/promo-mob.jpg");
   background-size: cover;
@@ -14,10 +14,20 @@
   color: $default-color;
 
   @media (min-width: 768px) {
+    min-height: 645px;
     background-image: url("../img/promo/promo-tablet.jpg");
   }
   @media (min-width: $desktop) {
+    min-height: 650px;
     background-image: url("../img/promo/promo.jpg");
+  }
+
+  @media (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    background-image: url("../img/promo/promo-mob@2x.jpg");
+  }
+
+  @media (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
+    background-image: url("../img/promo/promo-tablet@2x.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

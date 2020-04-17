@@ -1,6 +1,10 @@
 .page-footer {
-  padding: 50px 0;
+  padding: 40px 0;
   background-color: $primary-color;
+
+  @media (min-width: $desktop) {
+    padding: 50px 0;
+  }
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -21,9 +25,14 @@
     }
   }
   &__nav {
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     @media (min-width: $tablet) {
       margin-bottom: 0;
+    }
+
+    & li {
+      margin-bottom: 8px;
     }
   }
   &__social {

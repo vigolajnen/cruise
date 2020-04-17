@@ -2,8 +2,8 @@
   &__toggle {
     z-index: 5;
     position: absolute;
-    top: 30px;
-    right: 15px;
+    top: 22px;
+    right: 16px;
     height: 27px;
     display: block;
     border: none;
@@ -82,8 +82,8 @@
 
       & .navigation__link {
         font-weight: 500;
-font-size: 18px;
-line-height: 22px;
+        font-size: 18px;
+        line-height: 22px;
         color: $primary-color;
       }
     }
@@ -108,6 +108,9 @@ line-height: 22px;
     &:not(:last-child) {
       margin-right: 23px;
 
+      @media (min-width: $tablet) {
+        margin-right: 18px;
+      }
       @media (min-width: $desktop) {
         margin-right: 32px;
       }
@@ -123,6 +126,11 @@ line-height: 22px;
     &:focus,
     &:hover {
       opacity: 0.5;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 17px;
     }
 
     @media (min-width: $desktop) {

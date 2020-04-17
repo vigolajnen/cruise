@@ -1,8 +1,8 @@
 .about {
-  padding: $section-pd 0;
+  padding: 57px 0;
 
   @media (min-width: $tablet) {
-    padding: $section-pd-sm 0;
+    padding: 90px 0;
   }
   @media (min-width: $desktop) {
     padding: 118px 0;
@@ -12,6 +12,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (min-width: $tablet) {
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -28,7 +32,7 @@
       box-sizing: border-box;
 
       @media (min-width: $tablet) {
-        padding: 0 0 0 20px;
+        padding: 10px 0 0 20px;
         width: 100%;
       }
     }
@@ -38,18 +42,40 @@
     @media (min-width: 520px) {
       padding-right: 45px;
     }
+    @media (min-width: $tablet) {
+      padding-right: 0;
+    }
     @media (min-width: $desktop) {
       padding: 64px 64px 0 0;
     }
 
     & h2 {
-      margin-bottom: 35px;
+      margin: 0;
+      margin-bottom: 17px;
+      max-width: 190px;
+      font-size: 24px;
+      line-height: 140%;
+      font-weight: 600;
+
+      @media (min-width: $tablet) {
+        margin-bottom: 18px;
+        max-width: 205px;
+        font-size: 26px;
+      }
+      @media (min-width: $desktop) {
+        font-size: 28px;
+        line-height: 150%;
+        max-width: 100%;
+      }
     }
 
     & p {
       margin: 0;
-      margin-bottom: 35px;
+      margin-bottom: 32px;
+      padding-right: 18px;
+      @media (min-width: $tablet) {
+        margin-bottom: 35px;
+      }
     }
-    
   }
 }

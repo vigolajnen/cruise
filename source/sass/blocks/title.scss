@@ -1,10 +1,18 @@
 .title {
   margin: 0;
   margin-bottom: 56px;
-  font-size: 28px;
+  max-width: 190px;
+  font-size: 24px;
+  line-height: 140%;
   font-weight: 600;
 
-  &--center {
-    text-align: center;
+  @media (min-width: $tablet) {
+    max-width: 205px;
+    font-size: 26px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 28px;
+    line-height: 150%;
+    max-width: 100%;
   }
 }

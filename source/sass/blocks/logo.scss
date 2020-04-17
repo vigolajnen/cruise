@@ -1,5 +1,13 @@
 .logo {
   display: block;
+  width: 42px;
+
+  @media (min-width: $tablet) {
+    width: 38px;
+  }
+  @media (min-width: $desktop) {
+    width: 70px;
+  }
   &__pic {
     max-width: 100%;
     height: auto;
