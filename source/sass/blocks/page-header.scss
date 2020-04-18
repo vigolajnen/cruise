@@ -8,8 +8,11 @@
   padding: 20px 0;
   background-color: transparent;
 
-  @media (min-width: $tablet) {
-    padding: 35px 0;
+  @media (min-width: $table) {
+    padding: 27px 0;
+  }
+  @media (min-width: $desktop) {
+    padding: 33px 0;
   }
 
   &--mob {
@@ -26,7 +29,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;

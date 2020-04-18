@@ -6,30 +6,36 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $table) {
     padding: 45px 48px 50px;
   }
 
   &__title {
-    margin-bottom: 28px;
+    margin-bottom: 19px;
     font-weight: 500;
     font-size: 18px;
     line-height: 140%;
     color: #f9fbfd;
     text-align: center;
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
+      margin-bottom: 26px;
+    }
+    @media (min-width: $desktop) {
       margin-bottom: 30px;
     }
   }
 
   &__val {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     padding: 11px 20px;
     font-size: 14px;
     line-height: 150%;
     border: none;
     border-radius: 0;
     background-color: #f9fbfd;
+    @media (min-width: $table) {
+      margin-bottom: 20px;
+    }
   }
   &__button {
     display: inline-block;
@@ -55,8 +61,8 @@
     color: $default-color;
     font-size: 10px;
     line-height: 130%;
-    @media (min-width: $tablet) {
-      margin-bottom: 35px;
+    @media (min-width: $table) {
+      margin-bottom: 30px;
     }
   }
 }
@@ -89,12 +95,18 @@
 /* checked mark aspect */
 .form__val[type="checkbox"]:not(:checked) + label:after,
 .form__val[type="checkbox"]:checked + label:after {
-  content: "\2713\0020";
+
+  content: " ";
   position: absolute;
-  top: 0.15em;
-  left: 0.22em;
-  font-size: 1.6em;
-  line-height: 0.8;
+  top: 0.4em;
+  left: 0.4em;
+
+  width: 10px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../img/icons/icon-check.svg');
   color: $primary-color;
   transition: all 0.2s;
 }

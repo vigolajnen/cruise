@@ -3,7 +3,7 @@
   display: table;
   width: 100%;
 
-  min-height: 502px;
+  min-height: 474px;
 
   background-image: url("../img/promo/promo-mob.jpg");
   background-size: cover;
@@ -13,12 +13,12 @@
 
   color: $default-color;
 
-  @media (min-width: 768px) {
-    min-height: 645px;
+  @media (min-width: $table) {
+    min-height: 625px;
     background-image: url("../img/promo/promo-tablet.jpg");
   }
   @media (min-width: $desktop) {
-    min-height: 650px;
+    min-height: 640px;
     background-image: url("../img/promo/promo.jpg");
   }
 
@@ -37,12 +37,14 @@
   &__container {
     display: table-cell;
     vertical-align: middle;
-    transform: translateY(-8px);
+    margin-top: -10px;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
+      margin-top: -20px;
     }
     @media (min-width: $desktop) {
       padding-left: 95px;
+      margin-top: -16px;
     }
   }
   & h1 {
@@ -51,7 +53,7 @@
     font-size: 36px;
     line-height: 125%;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       font-size: 50px;
       line-height: 61px;
     }
@@ -66,7 +68,7 @@
     line-height: 140%;
     transform: translateY(10px);
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       font-size: 18px;
       line-height: 22px;
     }

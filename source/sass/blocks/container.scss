@@ -5,13 +5,13 @@
   padding: 0 15px;
   box-sizing: border-box;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $table) {
     padding: 0 45px;
   }
+  // @media (min-width: $desktop) {
+  //   padding: 0 50px;
+  // }
   @media (min-width: $desktop) {
-    padding: 0 50px;
-  }
-  @media (min-width: 1200px) {
-    padding: 0 103px;
+    padding: 0 100px;
   }
 }

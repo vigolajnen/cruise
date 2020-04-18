@@ -1,5 +1,5 @@
 .booking {
-  padding: 60px 0 65px;
+  padding: 54px 0 58px;
 
   background-image: url("../img/booking/booking-mob.jpg");
   background-size: cover;
@@ -7,12 +7,12 @@
   background-repeat: no-repeat;
   background-color: #daf2fe;
 
-  @media (min-width: $tablet) {
-    padding: 88px 0 100px;
+  @media (min-width: $table) {
+    padding: 88px 0 97px;
     background-image: url("../img/booking/booking-tablet.jpg");
   }
   @media (min-width: $desktop) {
-    padding: 48px 0 50px;
+    padding: 48px 0 48px;
     background-image: url("../img/booking/booking.jpg");
   }
 
@@ -42,7 +42,7 @@
     line-height: 130%;
     text-align: center;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       margin-bottom: 5px;
       max-width: 100%;
       font-size: 34px;
@@ -64,7 +64,7 @@
     @media (min-width: 767px) {
       max-width: 352px;
     }
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       font-size: 18px;
       line-height: 150%;
     }
@@ -76,16 +76,16 @@
   }
   &__info {
     width: 100%;
-    margin: 0 auto 33px;
+    margin: 0 auto 27px;
     box-sizing: border-box;
 
-    @media (min-width: $tablet) {
-      margin-bottom: 52px;
+    @media (min-width: $table) {
+      margin-bottom: 48px;
     }
     @media (min-width: $desktop) {
       width: 50%;
       padding-left: 60px;
-      padding-top: 48px;
+      padding-top: 45px;
     }
   }
 
@@ -97,11 +97,11 @@
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
     }
     @media (min-width: $desktop) {
       width: 50%;
-      padding-left: 75px;
+      padding-left: 55px;
     }
   }
 }

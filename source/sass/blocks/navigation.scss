@@ -2,8 +2,8 @@
   &__toggle {
     z-index: 5;
     position: absolute;
-    top: 22px;
-    right: 16px;
+    top: 19px;
+    right: 8px;
     height: 27px;
     display: block;
     border: none;
@@ -11,7 +11,7 @@
     background-color: transparent;
     cursor: pointer;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       display: none;
     }
 
@@ -58,7 +58,7 @@
   }
   &__inner {
     display: none;
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       display: flex;
     }
 
@@ -99,7 +99,7 @@
     margin: 0;
     list-style: none;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       flex-direction: row;
     }
   }
@@ -108,7 +108,7 @@
     &:not(:last-child) {
       margin-right: 23px;
 
-      @media (min-width: $tablet) {
+      @media (min-width: $table) {
         margin-right: 18px;
       }
       @media (min-width: $desktop) {
@@ -128,7 +128,7 @@
       opacity: 0.5;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       font-size: 14px;
       line-height: 17px;
     }
@@ -143,10 +143,10 @@
 .navigation--footer {
   & .navigation__item {
     margin-bottom: 8px;
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       margin-bottom: 0;
       &:not(:last-child) {
-        margin-right: 23px;
+        margin-right: 20px;
       }
     }
     @media (min-width: $desktop) {
@@ -156,7 +156,7 @@
     }
   }
   & .navigation__link {
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       font-size: 12px;
       line-height: 15px;
     }

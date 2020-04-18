@@ -1,11 +1,11 @@
 .about {
-  padding: 57px 0;
+  padding: 53px 0 55px;
 
-  @media (min-width: $tablet) {
-    padding: 90px 0 60px;
+  @media (min-width: $table) {
+    padding: 87px 0 50px;
   }
   @media (min-width: $desktop) {
-    padding: 110px 0 105px;
+    padding: 110px 0 113px;
   }
 
   &__container {
@@ -13,27 +13,29 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       justify-content: space-between;
     }
   }
 
   &__info {
     width: auto;
-    @media (min-width: $tablet) {
+    box-sizing: border-box;
+    @media (min-width: $table) {
       width: 52%;
     }
     @media (min-width: $desktop) {
       width: 50%;
+      padding: 65px 40px 0 0;
     }
   }
 
   &__pic {
-    @media (min-width: $tablet) {
+    box-sizing: border-box;
+    @media (min-width: $table) {
       width: 48%;
     }
     @media (min-width: $desktop) {
-      width: 50%;
     }
     & img {
       max-width: 100%;
@@ -42,38 +44,28 @@
       object-fit: cover;
       box-sizing: border-box;
 
-      @media (min-width: $tablet) {
+      @media (min-width: $table) {
         padding-top: 12px;
       }
     }
   }
 
   &__text {
-    @media (min-width: 520px) {
-      padding-right: 45px;
-    }
-    @media (min-width: $tablet) {
-      padding-right: 0;
-    }
-    @media (min-width: $desktop) {
-      padding: 64px 64px 0 0;
-    }
-
     & h2 {
       margin: 0;
-      margin-bottom: 17px;
+      margin-bottom: 13px;
       max-width: 190px;
       font-size: 24px;
       line-height: 140%;
       font-weight: 600;
 
-      @media (min-width: $tablet) {
+      @media (min-width: $table) {
         margin-bottom: 18px;
         max-width: 205px;
         font-size: 26px;
       }
       @media (min-width: $desktop) {
-        margin-bottom: 28px;
+        margin-bottom: 26px;
         font-size: 28px;
         line-height: 150%;
         max-width: 100%;
@@ -82,10 +74,13 @@
 
     & p {
       margin: 0;
-      margin-bottom: 32px;
-      padding-right: 18px;
-      @media (min-width: $tablet) {
+      margin-bottom: 38px;
+      font-size: 15px;
+      line-height: 150%;
+      @media (min-width: $table) {
+        padding-right: 18px;
         margin-bottom: 35px;
+        font-size: 16px;
       }
     }
   }

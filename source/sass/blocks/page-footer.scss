@@ -2,8 +2,8 @@
   padding: 40px 0;
   background-color: $primary-color;
 
-  @media (min-width: $tablet) {
-    padding: 47px 0;
+  @media (min-width: $table) {
+    padding: 46px 0;
   }
   @media (min-width: $desktop) {
     padding: 50px 0;
@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       align-items: center;
       flex-direction: row;
       justify-content: space-between;
@@ -28,15 +28,15 @@
     }
   }
   &__nav {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    @media (min-width: $tablet) {
+    margin-top: 11px;
+    margin-bottom: 8px;
+    @media (min-width: $table) {
       margin-bottom: 0;
       margin-top: 0;
     }
   }
   &__social {
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       margin-left: auto;
     }
   }

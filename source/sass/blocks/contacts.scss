@@ -1,11 +1,11 @@
 .contacts {
-  padding: 60px 0 50px;
+  padding: 53px 0;
 
-  @media (min-width: $tablet) {
-    padding: $section-pd-sm 0 75px;
+  @media (min-width: $table) {
+    padding: $section-pd-sm 0 87px;
   }
   @media (min-width: $desktop) {
-    padding: $section-pd-md 0 107px;
+    padding: $section-pd-md 0 110px;
   }
   &__container {
     display: flex;
@@ -17,9 +17,12 @@
     order: 1;
     width: 100%;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
       order: 0;
-      width: 50%;
+      width: 48%;
+    }
+    @media (min-width: $desktop) {
+      width: 48%;
     }
 
     & img {
@@ -34,21 +37,23 @@
 
     box-sizing: border-box;
 
-    @media (min-width: $tablet) {
-      width: 50%;
-      padding-left: 13px;
-      padding-top: 10px;
+    @media (min-width: $table) {
+      width: 48%;
+      padding-top: 21px;
     }
     @media (min-width: $desktop) {
-      padding-left: 82px;
-      padding-top: 25px;
+      width: 43%;
+      padding-top: 30px;
     }
   }
   & p {
-    margin: 0 0 29px 0;
+    margin: 0 0 20px 0;
     font-size: 18px;
     line-height: 150%;
     font-weight: 500;
+    @media (min-width: $table) {
+      margin-bottom: 29px;
+    }
   }
   &__list {
     padding: 0;

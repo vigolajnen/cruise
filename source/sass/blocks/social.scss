@@ -9,11 +9,11 @@
   &__item {
     &:not(:last-child) {
       margin-right: 18px;
-      @media (min-width: $tablet) {
-        margin-right: 23px;
+      @media (min-width: $table) {
+        margin-right: 16px;
       }
       @media (min-width: $desktop) {
-        margin-right: 25px;
+        margin-right: 33px;
       }
     }
 

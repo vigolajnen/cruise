@@ -2,7 +2,7 @@
   display: block;
   width: 42px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $table) {
     width: 38px;
   }
   @media (min-width: $desktop) {

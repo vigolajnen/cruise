@@ -1,5 +1,5 @@
 .advantage {
-  padding: 60px 0;
+  padding: 55px 0 40px;
 
   background-image: url("../img/advantage/advantage-mob.jpg");
   background-size: cover;
@@ -7,12 +7,12 @@
   background-repeat: no-repeat;
   background-color: #dde9f5;
 
-  @media (min-width: $tablet) {
-    padding: 90px 0 100px;
+  @media (min-width: $table) {
+    padding: 87px 0 95px;
     background-image: url("../img/advantage/advantage-tablet.jpg");
   }
   @media (min-width: $desktop) {
-    padding: 110px 0 135px;
+    padding: 107px 0 117px;
     background-image: url("../img/advantage/advantage.jpg");
   }
 
@@ -29,13 +29,6 @@
   }
 
   &__container {
-    @media (min-width: 600px) {
-      padding: 0 45px;
-    }
-    @media (min-width: $desktop) {
-      padding: 0 103px;
-    }
-
     & h2 {
       margin: 0 auto 30px;
 
@@ -45,12 +38,13 @@
       font-weight: 600;
       text-align: center;
 
-      @media (min-width: $tablet) {
+      @media (min-width: $table) {
         margin-bottom: 50px;
         max-width: 205px;
         font-size: 26px;
       }
       @media (min-width: $desktop) {
+        margin-bottom: 48px;
         font-size: 28px;
         line-height: 150%;
         max-width: 100%;
@@ -68,31 +62,22 @@
   }
   &__item {
     flex-grow: 1;
+    margin-bottom: 30px;
     padding: 25px 18px;
     background-color: #f9fbfd;
     width: auto;
     box-sizing: border-box;
 
-    &:not(:last-child) {
-      margin-right: 25px;
-    }
-
-    @media (max-width: 754px) {
-      &:not(:last-child) {
-        margin-bottom: 27px;
-        margin-right: 0;
-      }
-    }
-
-    @media (min-width: 755px) {
+    @media (min-width: $table) {
       width: calc(100% / 3 - 25px);
-    }
-    @media (min-width: $tablet) {
-      padding: 24px 18px;
+      padding: 24px 13px 24px 20px;
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
     }
     @media (min-width: $desktop) {
       width: calc(100% / 3 - 40px);
-      padding: 30px 25px;
+      padding: 30px;
       &:not(:last-child) {
         margin-right: 40px;
       }
@@ -101,7 +86,7 @@
     & h3 {
       max-width: 200px;
       margin: 0;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;
@@ -111,20 +96,22 @@
     }
 
     & p {
-      padding-right: 15px;
       margin: 0;
-      font-size: 14px;
-      line-height: 140%;
-      @media (min-width: $tablet) {
-        padding-right: 0;
+      font-size: 13px;
+      line-height: 130%;
+
+      @media (min-width: $table) {
+        font-size: 14px;
+        line-height: 140%;
       }
     }
   }
   &__icon {
-    height: 27px;
+    height: 22px;
     margin-bottom: 11px;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $table) {
+      height: 27px;
     }
     @media (min-width: $desktop) {
       height: 32px;
