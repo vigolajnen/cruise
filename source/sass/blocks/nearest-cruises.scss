@@ -70,7 +70,7 @@
     }
     @media (min-width: 1200px) {
       width: calc(25% - 30px);
-
+      margin-right: 0;
       &:not(:nth-child(4n)) {
         margin-right: 30px;
       }

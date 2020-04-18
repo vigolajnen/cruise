@@ -1,0 +1,20 @@
+.map {
+  position: relative;
+  height: 100%;
+  min-height: 306px;
+
+  background-image: url("../img/contacts/map-mob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  @media (min-width: $table) {
+    min-height: 336px;
+    background-image: url("../img/contacts/map-table.jpg");
+  }
+  @media (min-width: $desktop) {
+    min-height: 309px;
+    background-image: url("../img/contacts/map.jpg");
+  }
+}

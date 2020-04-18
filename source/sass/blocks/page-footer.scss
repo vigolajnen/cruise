@@ -2,6 +2,9 @@
   padding: 40px 0;
   background-color: $primary-color;
 
+  grid-row-start: 2;
+  grid-row-end: 3;
+
   @media (min-width: $table) {
     padding: 46px 0;
   }

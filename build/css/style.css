@@ -12,6 +12,9 @@
   font-weight: 600;
   font-style: normal; }
 
+html {
+  height: 100%; }
+
 body {
   position: relative;
   margin: 0;
@@ -21,17 +24,20 @@ body {
   font-weight: 300;
   line-height: 24px;
   color: #011c40;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto; }
   body::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-image: url("../img/mob.jpg");
+    background-image: url("../img/desktop.jpg");
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: contain; }
@@ -429,11 +435,11 @@ body {
   background-color: #dde9f5; }
   @media (min-width: 768px) {
     .advantage {
-      padding: 87px 0 95px;
+      padding: 87px 0 65px;
       background-image: url("../img/advantage/advantage-tablet.jpg"); } }
   @media (min-width: 1024px) {
     .advantage {
-      padding: 107px 0 117px;
+      padding: 107px 0 87px;
       background-image: url("../img/advantage/advantage.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
     .advantage {
@@ -593,7 +599,8 @@ body {
           margin-right: 0; } }
     @media (min-width: 1200px) {
       .nearest-cruises__item {
-        width: calc(25% - 30px); }
+        width: calc(25% - 30px);
+        margin-right: 0; }
         .nearest-cruises__item:not(:nth-child(4n)) {
           margin-right: 30px; } }
 
@@ -856,7 +863,8 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
     @media (min-width: 768px) {
       .contacts__map {
         -webkit-box-ordinal-group: 1;
@@ -946,6 +954,23 @@ body {
     @media (min-width: 1024px) {
       .social__item svg {
         height: 20px; } }
+
+.map {
+  position: relative;
+  height: 100%;
+  min-height: 306px;
+  background-image: url("../img/contacts/map-mob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .map {
+      min-height: 336px;
+      background-image: url("../img/contacts/map-table.jpg"); } }
+  @media (min-width: 1024px) {
+    .map {
+      min-height: 309px;
+      background-image: url("../img/contacts/map.jpg"); } }
 
 .form {
   margin: 0 auto;
@@ -1064,7 +1089,9 @@ body {
 
 .page-footer {
   padding: 40px 0;
-  background-color: #011c40; }
+  background-color: #011c40;
+  grid-row-start: 2;
+  grid-row-end: 3; }
   @media (min-width: 768px) {
     .page-footer {
       padding: 46px 0; } }

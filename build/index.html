@@ -474,14 +474,7 @@
     <section class="contacts">
       <div class="contacts__container container">
         <div class="contacts__map">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/contacts/map.jpg 1x, img/contacts/map@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="
-                img/contacts/map-table.jpg    1x,
-                img/contacts/map-table@2x.jpg 2x
-              ">
-            <img src="img/contacts/map-mob.jpg" width="290" height="316" alt="Карта">
-          </picture>
+          <div id="map" class="map"></div>
         </div>
         <div class="contacts__info">
           <p>
@@ -556,6 +549,7 @@
       </div>
     </footer>
     <script src="js/vendor.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5yUe9FAKioTSGs8OXzRMBPUMtzWNjHx4&callback=initMap" async="" defer=""></script>
     <script src="js/script.js"></script>
     <script>
       svg4everybody();

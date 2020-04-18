@@ -98,7 +98,8 @@ gulp.task("copy", function () {
 
 gulp.task("js", function () {
   return gulp.src("source/js/script.js")
-  .pipe(plumber())
+    .pipe(plumber())
+    .pipe(rigger())
   .pipe(gulp.dest("build/js"))
 });
 
