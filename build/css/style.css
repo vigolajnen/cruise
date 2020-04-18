@@ -298,6 +298,8 @@ body {
     .promo {
       background-image: url("../img/promo/promo@2x.jpg"); } }
   .promo__container {
+    max-width: 1366px;
+    width: 100%;
     display: table-cell;
     vertical-align: middle;
     margin-top: -10px; }
@@ -345,7 +347,9 @@ body {
         flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+    .promo__container {
+      margin: 0 auto; } }
 
 .about {
   padding: 53px 0 55px; }

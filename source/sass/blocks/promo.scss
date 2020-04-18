@@ -35,6 +35,8 @@
   }
 
   &__container {
+    max-width: 1366px;
+    width: 100%;
     display: table-cell;
     vertical-align: middle;
     margin-top: -10px;
@@ -83,7 +85,10 @@
   .promo {
     display: flex;
     flex-wrap: wrap;
-
     align-items: center;
+
+    &__container {
+      margin: 0 auto;
+    }
   }
 }
