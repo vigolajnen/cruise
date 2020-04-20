@@ -87,6 +87,19 @@
     @media (min-width: $desktop) {
       height: 382px;
     }
+
+    & h3 {
+      margin: 0;
+      padding: 16px 26px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      color: $default-color;
+      box-sizing: border-box;
+      @media (min-width: $table) {
+        padding: 23px 30px;
+      }
+    }
   }
   &__title {
     margin: 0;

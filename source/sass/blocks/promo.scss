@@ -1,44 +1,42 @@
 .promo {
   position: relative;
-  display: table;
+
   width: 100%;
-  padding-bottom: 80px;
   min-height: 405px;
   color: $default-color;
   box-sizing: border-box;
 
   @media (min-width: $table) {
     min-height: 540px;
-    padding-bottom: 95px;
   }
   @media (min-width: $desktop) {
     min-height: 540px;
-    padding-bottom: 125px;
   }
 
   &__container {
-    max-width: 1366px;
-    width: 100%;
-    display: table-cell;
-    vertical-align: middle;
-
+    padding-top: 96px;
     @media (min-width: $table) {
+      padding-top: 178px;
     }
     @media (min-width: $desktop) {
-      padding-left: 95px;
+      padding-top: 164px;
+      max-width: 1163px;
     }
   }
+
   & h1 {
-    margin: 0;
+    margin: 0 0 5px 0;
     font-weight: bold;
     font-size: 36px;
     line-height: 125%;
 
     @media (min-width: $table) {
+      margin-bottom: 11px;
       font-size: 50px;
       line-height: 61px;
     }
     @media (min-width: $desktop) {
+      margin-bottom: 12px;
       font-size: 54px;
       line-height: 66px;
     }
@@ -47,7 +45,6 @@
     margin: 0;
     font-size: 16px;
     line-height: 140%;
-    transform: translateY(10px);
 
     @media (min-width: $table) {
       font-size: 18px;
@@ -56,18 +53,6 @@
     @media (min-width: $desktop) {
       font-size: 20px;
       line-height: 24px;
-    }
-  }
-}
-
-@supports (display: flex) {
-  .promo {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-    &__container {
-      margin: 0 auto;
     }
   }
 }
