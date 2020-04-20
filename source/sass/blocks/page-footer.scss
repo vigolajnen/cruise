@@ -1,9 +1,7 @@
 .page-footer {
+
   padding: 40px 0;
   background-color: $primary-color;
-
-  grid-row-start: 2;
-  grid-row-end: 3;
 
   @media (min-width: $table) {
     padding: 46px 0;
@@ -27,6 +25,9 @@
     margin-right: 25px;
 
     @media (min-width: $desktop) {
+      margin-right: 15px;
+    }
+    @media (min-width: 1200px) {
       margin-right: 40px;
     }
   }

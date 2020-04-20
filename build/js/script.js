@@ -4,15 +4,18 @@
   var nav = document.querySelector(".navigation");
   var navBtn = nav.querySelector(".navigation__toggle");
   var navInner = document.querySelector(".navigation__inner");
+  var logo = document.querySelector(".logo");
 
   navBtn.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (navBtn.classList.contains("navigation__toggle--opened")) {
       navBtn.classList.remove("navigation__toggle--opened");
       navBtn.classList.add("navigation__toggle--closed");
+      logo.classList.remove("logo--mob");
     } else {
       navBtn.classList.add("navigation__toggle--opened");
       navBtn.classList.remove("navigation__toggle--closed");
+      logo.classList.add("logo--mob");
     }
 
     if (navInner.classList.contains("navigation__inner--active")) {
@@ -39,19 +42,4 @@
       }
     }
   }
-
 })();
-function initMap() {
-  var myLatLng = { lat: 59.938635, lng: 30.323118 };
-
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
-    center: myLatLng
-  });
-
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'г. Санкт Петербург, ул. Большая Конюшенная, 19/8'
-  });
-}

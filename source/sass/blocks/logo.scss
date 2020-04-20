@@ -2,15 +2,26 @@
   display: block;
   width: 42px;
 
+  &--mob {
+    z-index: 5;
+    position: absolute;
+    left: 30px;
+    & .logo__pic {
+      fill: $primary-color;
+    }
+  }
+
   @media (min-width: $table) {
     width: 38px;
   }
   @media (min-width: $desktop) {
     width: 70px;
+    height: 38px;
   }
   &__pic {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    fill: $default-color;
   }
 }

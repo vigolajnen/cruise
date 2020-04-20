@@ -58,17 +58,20 @@
   }
   &__inner {
     display: none;
+    box-sizing: border-box;
     @media (min-width: $table) {
       display: flex;
     }
 
     &--active {
       display: block;
+      z-index: 1;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       padding: 30px;
+      padding-top: 70px;
       background-color: $default-color;
 
       & .navigation__logo {

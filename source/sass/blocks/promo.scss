@@ -2,36 +2,18 @@
   position: relative;
   display: table;
   width: 100%;
-
-  min-height: 474px;
-
-  background-image: url("../img/promo/promo-mob.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #00437c;
-
+  padding-bottom: 80px;
+  min-height: 405px;
   color: $default-color;
+  box-sizing: border-box;
 
   @media (min-width: $table) {
-    min-height: 625px;
-    background-image: url("../img/promo/promo-tablet.jpg");
+    min-height: 540px;
+    padding-bottom: 95px;
   }
   @media (min-width: $desktop) {
-    min-height: 640px;
-    background-image: url("../img/promo/promo.jpg");
-  }
-
-  @media (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
-    background-image: url("../img/promo/promo-mob@2x.jpg");
-  }
-
-  @media (min-resolution: 124.8dpi), (min-resolution: 1.3dppx) {
-    background-image: url("../img/promo/promo-tablet@2x.jpg");
-  }
-
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/promo/promo@2x.jpg");
+    min-height: 540px;
+    padding-bottom: 125px;
   }
 
   &__container {
@@ -39,14 +21,11 @@
     width: 100%;
     display: table-cell;
     vertical-align: middle;
-    margin-top: -10px;
 
     @media (min-width: $table) {
-      margin-top: -20px;
     }
     @media (min-width: $desktop) {
       padding-left: 95px;
-      margin-top: -16px;
     }
   }
   & h1 {

@@ -2,15 +2,18 @@
   var nav = document.querySelector(".navigation");
   var navBtn = nav.querySelector(".navigation__toggle");
   var navInner = document.querySelector(".navigation__inner");
+  var logo = document.querySelector(".logo");
 
   navBtn.addEventListener("click", function(evt) {
     evt.preventDefault();
     if (navBtn.classList.contains("navigation__toggle--opened")) {
       navBtn.classList.remove("navigation__toggle--opened");
       navBtn.classList.add("navigation__toggle--closed");
+      logo.classList.remove("logo--mob");
     } else {
       navBtn.classList.add("navigation__toggle--opened");
       navBtn.classList.remove("navigation__toggle--closed");
+      logo.classList.add("logo--mob");
     }
 
     if (navInner.classList.contains("navigation__inner--active")) {
@@ -37,5 +40,4 @@
       }
     }
   }
-
 })();
