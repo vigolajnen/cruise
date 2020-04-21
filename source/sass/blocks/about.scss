@@ -1,54 +1,53 @@
 .about {
-  padding: 53px 0 55px;
+  padding: 110px 0 113px;
 
-  @media (min-width: $table) {
+  @media (max-width: $desktop) {
     padding: 87px 0 50px;
   }
 
-  @media (min-width: $desktop) {
-    padding: 110px 0 113px;
+  @media (max-width: $table) {
+    padding: 53px 0 55px;
   }
 
   &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    @media (min-width: $table) {
-      justify-content: space-between;
-    }
   }
 
   &__info {
-    width: auto;
+    width: 50%;
+    padding: 65px 40px 0 0;
     box-sizing: border-box;
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       width: 52%;
+      padding: 0;
     }
 
-    @media (min-width: $desktop) {
-      width: 50%;
-      padding: 65px 40px 0 0;
+    @media (max-width: $table) {
+      width: 100%;
     }
   }
 
   &__pic {
     box-sizing: border-box;
+    width: 48%;
 
-    @media (min-width: $table) {
-      width: 48%;
+    @media (max-width: $table) {
+      width: auto;
     }
 
     & img {
+      padding-top: 12px;
       max-width: 100%;
       width: 100%;
       height: auto;
       object-fit: cover;
       box-sizing: border-box;
 
-      @media (min-width: $table) {
-        padding-top: 12px;
+      @media (max-width: $table) {
+        padding-top: 0;
       }
     }
   }
@@ -56,36 +55,37 @@
   &__text {
     & h2 {
       margin: 0;
-      margin-bottom: 13px;
-      max-width: 190px;
-      font-size: 24px;
-      line-height: 140%;
+      margin-bottom: 26px;
+      font-size: 28px;
+      line-height: 150%;
       font-weight: 600;
+      max-width: 100%;
 
-      @media (min-width: $table) {
+      @media (max-width: $desktop) {
         margin-bottom: 18px;
         max-width: 205px;
         font-size: 26px;
       }
 
-      @media (min-width: $desktop) {
-        margin-bottom: 26px;
-        font-size: 28px;
-        line-height: 150%;
-        max-width: 100%;
+      @media (max-width: $table) {
+        margin-bottom: 13px;
+        max-width: 190px;
+        font-size: 24px;
+        line-height: 140%;
       }
     }
 
     & p {
       margin: 0;
-      margin-bottom: 38px;
-      font-size: 15px;
-      line-height: 150%;
 
-      @media (min-width: $table) {
-        padding-right: 18px;
-        margin-bottom: 35px;
-        font-size: 16px;
+      padding-right: 18px;
+      margin-bottom: 35px;
+      font-size: 16px;
+
+      @media (max-width: $table) {
+        margin-bottom: 38px;
+        font-size: 15px;
+        line-height: 150%;
       }
     }
   }

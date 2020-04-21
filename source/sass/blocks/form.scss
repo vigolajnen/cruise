@@ -1,39 +1,40 @@
 .form {
   margin: 0 auto;
-  padding: 35px 30px 40px;
+
+  padding: 45px 48px 50px;
   background-color: $primary-color;
 
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $table) {
-    padding: 45px 48px 50px;
+  @media (max-width: $table) {
+    padding: 35px 30px 40px;
   }
 
   &__title {
-    margin-bottom: 19px;
+    margin-bottom: 30px;
     font-weight: 500;
     font-size: 18px;
     line-height: 140%;
     color: #f9fbfd;
     text-align: center;
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       margin-bottom: 26px;
     }
 
-    @media (min-width: $desktop) {
-      margin-bottom: 30px;
+    @media (max-width: $table) {
+      margin-bottom: 19px;
     }
   }
 
   & label {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     color: $default-color;
     box-sizing: border-box;
 
-    @media (min-width: $table) {
-      margin-bottom: 20px;
+    @media (max-width: $table) {
+      margin-bottom: 16px;
     }
   }
 
@@ -51,10 +52,19 @@
     width: 100%;
     font-size: 14px;
     line-height: 150%;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 0;
     background-color: #f9fbfd;
     box-sizing: border-box;
+
+    &:focus {
+      opacity: 1;
+      border: 1px solid #bce0fa;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
   }
 
   & input[type="checkbox"]:not(:checked),

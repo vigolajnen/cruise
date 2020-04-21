@@ -1,18 +1,19 @@
 .navigation {
   &__toggle {
+    display: none;
     z-index: 5;
     position: absolute;
     top: 19px;
     right: 8px;
     height: 27px;
-    display: block;
+
     border: none;
     border-radius: 0;
     background-color: transparent;
     cursor: pointer;
 
-    @media (min-width: $table) {
-      display: none;
+    @media (max-width: $table) {
+      display: block;
     }
 
     &--closed {
@@ -65,11 +66,11 @@
   }
 
   &__inner {
-    display: none;
+    display: flex;
     box-sizing: border-box;
 
-    @media (min-width: $table) {
-      display: flex;
+    @media (max-width: $table) {
+      display: none;
     }
 
     &--active {
@@ -108,34 +109,35 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0;
     margin: 0;
     list-style: none;
 
-    @media (min-width: $table) {
-      flex-direction: row;
+    @media (max-width: $table) {
+      flex-direction: column;
     }
   }
 
   &__item {
     &:not(:last-child) {
-      margin-right: 23px;
+      margin-right: 32px;
 
-      @media (min-width: $table) {
+      @media (max-width: $desktop) {
         margin-right: 18px;
       }
 
-      @media (min-width: $desktop) {
-        margin-right: 32px;
+      @media (max-width: $table) {
+        margin-right: 23px;
       }
     }
   }
 
   &__link {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
+
+    font-size: 16px;
+    line-height: 20px;
     color: $default-color;
     text-decoration: none;
 
@@ -144,14 +146,14 @@
       opacity: 0.5;
     }
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       font-size: 14px;
       line-height: 17px;
     }
 
-    @media (min-width: $desktop) {
-      font-size: 16px;
-      line-height: 20px;
+    @media (max-width: $table) {
+      font-size: 12px;
+      line-height: 15px;
     }
   }
 }
@@ -160,30 +162,26 @@
   & .navigation__item {
     margin-bottom: 8px;
 
-    @media (min-width: $table) {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+
+    @media (max-width: $desktop) {
       margin-bottom: 0;
 
       &:not(:last-child) {
         margin-right: 20px;
       }
     }
-
-    @media (min-width: $desktop) {
-      &:not(:last-child) {
-        margin-right: 32px;
-      }
-    }
   }
 
   & .navigation__link {
-    @media (min-width: $table) {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: $desktop) {
       font-size: 12px;
       line-height: 15px;
-    }
-
-    @media (min-width: $desktop) {
-      font-size: 16px;
-      line-height: 20px;
     }
   }
 }

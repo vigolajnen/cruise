@@ -1,16 +1,16 @@
 .header-and-promo {
-  background-image: url("../img/promo/promo-mob.jpg");
+  background-image: url("../img/promo/promo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #00437c;
 
-  @media (min-width: $table) {
+  @media (max-width: $desktop) {
     background-image: url("../img/promo/promo-tablet.jpg");
   }
 
-  @media (min-width: $desktop) {
-    background-image: url("../img/promo/promo.jpg");
+  @media (max-width: $table) {
+    background-image: url("../img/promo/promo-mob.jpg");
   }
 
   @media (min-resolution: 120dpi), (min-resolution: 1.25dppx) {

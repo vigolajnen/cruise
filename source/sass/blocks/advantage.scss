@@ -1,20 +1,19 @@
 .advantage {
-  padding: 55px 0 40px;
-
-  background-image: url("../img/advantage/advantage-mob.jpg");
+  padding: 107px 0 87px;
+  background-image: url("../img/advantage/advantage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #dde9f5;
 
-  @media (min-width: $table) {
+  @media (max-width: $desktop) {
     padding: 87px 0 65px;
     background-image: url("../img/advantage/advantage-tablet.jpg");
   }
 
-  @media (min-width: $desktop) {
-    padding: 107px 0 87px;
-    background-image: url("../img/advantage/advantage.jpg");
+  @media (max-width: $table) {
+    padding: 55px 0 40px;
+    background-image: url("../img/advantage/advantage-mob.jpg");
   }
 
   @media (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
@@ -31,25 +30,24 @@
 
   &__container {
     & h2 {
-      margin: 0 auto 30px;
-
-      max-width: 190px;
-      font-size: 24px;
-      line-height: 140%;
+      margin: 0 auto 48px;
+      font-size: 28px;
+      line-height: 150%;
       font-weight: 600;
+      max-width: 100%;
       text-align: center;
 
-      @media (min-width: $table) {
+      @media (max-width: $table) {
+        margin: 0 auto 30px;
+        max-width: 190px;
+        font-size: 24px;
+        line-height: 140%;
+      }
+
+      @media (max-width: $desktop) {
         margin-bottom: 50px;
         max-width: 205px;
         font-size: 26px;
-      }
-
-      @media (min-width: $desktop) {
-        margin-bottom: 48px;
-        font-size: 28px;
-        line-height: 150%;
-        max-width: 100%;
       }
     }
   }
@@ -66,13 +64,18 @@
 
   &__item {
     flex-grow: 1;
-    margin-bottom: 30px;
-    padding: 25px 18px;
+    width: calc(100% / 3 - 40px);
+    padding: 30px;
+
     background-color: #f9fbfd;
-    width: auto;
+
     box-sizing: border-box;
 
-    @media (min-width: $table) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    @media (max-width: $desktop) {
       width: calc(100% / 3 - 25px);
       padding: 24px 13px 24px 20px;
 
@@ -81,50 +84,54 @@
       }
     }
 
-    @media (min-width: $desktop) {
-      width: calc(100% / 3 - 40px);
-      padding: 30px;
+    @media (max-width: $table) {
+      margin: 0;
+      margin-bottom: 30px;
+      padding: 25px 18px;
+
+      width: auto;
 
       &:not(:last-child) {
-        margin-right: 40px;
+        margin-right: 0;
       }
     }
 
     & h3 {
-      max-width: 200px;
+      max-width: 100%;
       margin: 0;
       margin-bottom: 8px;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;
 
-      @media (min-width: $desktop) {
-        max-width: 100%;
+      @media (max-width: $desktop) {
+        max-width: 200px;
       }
     }
 
     & p {
       margin: 0;
-      font-size: 13px;
-      line-height: 130%;
 
-      @media (min-width: $table) {
-        font-size: 14px;
-        line-height: 140%;
+      font-size: 14px;
+      line-height: 140%;
+
+      @media (max-width: $table) {
+        font-size: 13px;
+        line-height: 130%;
       }
     }
   }
 
   &__icon {
-    height: 22px;
-    margin-bottom: 11px;
+    height: 32px;
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       height: 27px;
     }
 
-    @media (min-width: $desktop) {
-      height: 32px;
+    @media (max-width: $table) {
+      height: 22px;
+      margin-bottom: 11px;
     }
   }
 }

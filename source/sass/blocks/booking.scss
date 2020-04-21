@@ -1,20 +1,20 @@
 .booking {
-  padding: 54px 0 58px;
-
-  background-image: url("../img/booking/booking-mob.jpg");
+  padding: 48px 0 48px;
+  background-image: url("../img/booking/booking.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #daf2fe;
 
-  @media (min-width: $table) {
+  @media (max-width: $desktop) {
     padding: 88px 0 97px;
     background-image: url("../img/booking/booking-tablet.jpg");
   }
 
-  @media (min-width: $desktop) {
-    padding: 48px 0 48px;
-    background-image: url("../img/booking/booking.jpg");
+  @media (max-width: $table) {
+    padding: 54px 0 58px;
+
+    background-image: url("../img/booking/booking-mob.jpg");
   }
 
   @media (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
@@ -37,64 +37,66 @@
   }
 
   & h2 {
-    max-width: 200px;
-    margin: 0 auto 14px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 150%;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 130%;
-    text-align: center;
+    text-align: left;
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       margin-bottom: 5px;
       max-width: 100%;
       font-size: 34px;
       line-height: 150%;
+      text-align: center;
     }
 
-    @media (min-width: $desktop) {
-      margin-bottom: 10px;
-      font-size: 40px;
-      line-height: 150%;
-      text-align: left;
+    @media (max-width: $table) {
+      max-width: 200px;
+      margin: 0 auto 14px;
+
+      font-size: 24px;
+      line-height: 130%;
+      text-align: center;
     }
   }
 
   & p {
-    margin: 0 auto;
-    max-width: 257px;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
 
-    @media (min-width: 767px) {
-      max-width: 352px;
-    }
-
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       font-size: 18px;
       line-height: 150%;
+      text-align: center;
     }
 
-    @media (min-width: $desktop) {
-      margin-right: auto;
-      margin-left: 0;
-      text-align: left;
+    @media (max-width: $table) {
+      margin: 0 auto;
+      max-width: 257px;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
     }
   }
 
   &__info {
-    width: 100%;
-    margin: 0 auto 27px;
+    width: 50%;
+    padding-left: 60px;
+    padding-top: 45px;
     box-sizing: border-box;
 
-    @media (min-width: $table) {
-      margin-bottom: 48px;
+    @media (max-width: $desktop) {
+      margin: 0 auto 48px;
+      padding-left: 0;
+      text-align: center;
     }
 
-    @media (min-width: $desktop) {
-      width: 50%;
-      padding-left: 60px;
-      padding-top: 45px;
+    @media (max-width: $table) {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto 27px;
     }
   }
 
@@ -104,12 +106,14 @@
 
   &__form {
     margin: 0 auto;
-    width: 100%;
+
+    width: 50%;
+    padding-left: 55px;
     box-sizing: border-box;
 
-    @media (min-width: $desktop) {
-      width: 50%;
-      padding-left: 55px;
+    @media (max-width: $desktop) {
+      width: 100%;
+      padding-left: 0;
     }
   }
 }

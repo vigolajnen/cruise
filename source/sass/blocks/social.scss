@@ -8,23 +8,30 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 18px;
+      margin-right: 33px;
 
-      @media (min-width: $table) {
+      @media (max-width: $desktop) {
         margin-right: 16px;
       }
 
-      @media (min-width: $desktop) {
-        margin-right: 33px;
+      @media (max-width: $table) {
+        margin-right: 18px;
       }
     }
 
     & svg {
-      height: 16px;
+      height: 20px;
 
-      @media (min-width: $desktop) {
-        height: 20px;
+      @media (max-width: $desktop) {
+        height: 16px;
       }
+    }
+  }
+
+  &__link {
+    &:focus,
+    &:hover {
+      opacity: 0.5;
     }
   }
 }

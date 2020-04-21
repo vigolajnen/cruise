@@ -1,44 +1,47 @@
 .nearest-cruises {
-  padding: 55px 0 40px;
+  padding: 108px 0 87px;
 
-  @media (min-width: $table) {
+  @media (max-width: $desktop) {
     padding: 87px 0 70px;
   }
 
-  @media (min-width: $desktop) {
-    padding: 108px 0 87px;
+  @media (max-width: $table) {
+    padding: 55px 0 40px;
   }
 
   &__container {
-    padding: 0 22px;
+    padding: 0 115px;
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       padding: 0 60px;
     }
 
-    @media (min-width: $desktop) {
-      padding: 0 115px;
+    @media (max-width: $table) {
+      padding: 0 22px;
     }
   }
 
   & h2 {
-    margin: 0 auto 30px;
-    font-size: 24px;
-    line-height: 140%;
+    margin: 0 auto 48px;
+
     font-weight: 600;
+
+    font-size: 28px;
+    line-height: 150%;
+    max-width: 100%;
     text-align: center;
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       margin-bottom: 50px;
       max-width: 100%;
       font-size: 26px;
     }
 
-    @media (min-width: $desktop) {
-      margin-bottom: 48px;
-      font-size: 28px;
-      line-height: 150%;
+    @media (max-width: $table) {
+      margin: 0 auto 30px;
       max-width: 100%;
+      font-size: 24px;
+      line-height: 140%;
     }
   }
 
@@ -53,35 +56,49 @@
 
   &__item {
     flex-grow: 1;
-    margin-bottom: 28px;
-    width: 100%;
     box-sizing: border-box;
+    margin-bottom: 30px;
+    width: calc(25% - 30px);
+    margin-right: 30px;
 
-    @media (min-width: 600px) {
-      margin-bottom: 30px;
-      width: calc(50% - 30px);
-
-      &:not(:nth-child(2n)) {
-        margin-right: 30px;
-      }
+    &:nth-child(4n) {
+      margin-right: 0;
     }
 
-    @media (min-width: $desktop) {
+    @media (max-width: 1200px) {
       width: calc(100% / 3 - 30px);
-      max-width: 285px;
+      max-width: 239px;
       margin-right: 30px;
 
       &:nth-child(3n) {
         margin-right: 0;
       }
+
+      &:nth-child(4n) {
+        margin-right: 30px;
+      }
     }
 
-    @media (min-width: 1200px) {
-      width: calc(25% - 30px);
-      margin-right: 0;
+    @media (max-width: $desktop) {
+      width: calc(50% - 30px);
+      max-width: 100%;
 
-      &:not(:nth-child(4n)) {
+      &:nth-child(3n) {
         margin-right: 30px;
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 520px) {
+      margin: 0;
+      margin-bottom: 28px;
+      width: 100%;
+
+      &:nth-child(3n) {
+        margin-right: 0;
       }
     }
   }

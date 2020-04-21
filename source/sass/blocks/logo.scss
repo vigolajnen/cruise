@@ -1,6 +1,7 @@
 .logo {
   display: block;
-  width: 42px;
+  width: 70px;
+  height: 38px;
 
   &--mob {
     z-index: 5;
@@ -12,13 +13,8 @@
     }
   }
 
-  @media (min-width: $table) {
-    width: 38px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 70px;
-    height: 38px;
+  @media (max-width: $table) {
+    width: 42px;
   }
 
   &__pic {

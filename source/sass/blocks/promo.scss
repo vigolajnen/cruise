@@ -2,63 +2,63 @@
   position: relative;
 
   width: 100%;
-  min-height: 405px;
+  min-height: 540px;
   color: $default-color;
   box-sizing: border-box;
 
-  @media (min-width: $table) {
-    min-height: 540px;
-  }
-
-  @media (min-width: $desktop) {
-    min-height: 540px;
+  @media (max-width: $desktop) {
+    min-height: 405px;
   }
 
   &__container {
-    padding-top: 96px;
+    padding-top: 164px;
+    max-width: 1163px;
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       padding-top: 178px;
     }
 
-    @media (min-width: $desktop) {
-      padding-top: 164px;
-      max-width: 1163px;
+    @media (max-width: $table) {
+      padding-top: 96px;
     }
   }
 
   & h1 {
-    margin: 0 0 5px 0;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 125%;
+    margin: 0 0 12px 0;
 
-    @media (min-width: $table) {
+    margin-bottom: 12px;
+    font-size: 54px;
+    line-height: 66px;
+    font-weight: bold;
+
+    @media (max-width: $desktop) {
       margin-bottom: 11px;
       font-size: 50px;
       line-height: 61px;
     }
 
-    @media (min-width: $desktop) {
-      margin-bottom: 12px;
-      font-size: 54px;
-      line-height: 66px;
+    @media (max-width: $table) {
+      margin-bottom: 5px;
+
+      font-size: 36px;
+      line-height: 125%;
     }
   }
 
   & p {
     margin: 0;
-    font-size: 16px;
-    line-height: 140%;
 
-    @media (min-width: $table) {
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (max-width: $desktop) {
       font-size: 18px;
       line-height: 22px;
     }
 
-    @media (min-width: $desktop) {
-      font-size: 20px;
-      line-height: 24px;
+    @media (max-width: $table) {
+      font-size: 16px;
+      line-height: 140%;
     }
   }
 }

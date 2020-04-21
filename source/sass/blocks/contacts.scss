@@ -1,12 +1,12 @@
 .contacts {
-  padding: 53px 0;
+  padding: $section-pd-md 0 110px;
 
-  @media (min-width: $table) {
+  @media (max-width: $desktop) {
     padding: $section-pd-sm 0 87px;
   }
 
-  @media (min-width: $desktop) {
-    padding: $section-pd-md 0 110px;
+  @media (max-width: $table) {
+    padding: 53px 0;
   }
 
   &__container {
@@ -17,18 +17,18 @@
   }
 
   &__map {
-    order: 1;
-    width: 100%;
-    height: 100%;
+    width: 48%;
     overflow: hidden;
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       order: 0;
       width: 48%;
     }
 
-    @media (min-width: $desktop) {
-      width: 48%;
+    @media (max-width: $table) {
+      order: 1;
+      width: 100%;
+      height: 100%;
     }
 
     & img {
@@ -40,36 +40,35 @@
   }
 
   &__info {
-    width: 100%;
-
+    width: 43%;
+    padding-top: 30px;
     box-sizing: border-box;
 
-    @media (min-width: $table) {
+    @media (max-width: $desktop) {
       width: 48%;
       padding-top: 21px;
     }
 
-    @media (min-width: $desktop) {
-      width: 43%;
-      padding-top: 30px;
+    @media (max-width: $table) {
+      width: 100%;
     }
   }
 
   & p {
-    margin: 0 0 20px 0;
+    margin: 0 0 29px 0;
     font-size: 18px;
     line-height: 150%;
     font-weight: 500;
 
-    @media (min-width: $table) {
-      margin-bottom: 29px;
+    @media (max-width: $table) {
+      margin-bottom: 20px;
     }
   }
 
   &__link {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
     font-size: 16px;
     line-height: 150%;
     color: $primary-color;
@@ -81,8 +80,8 @@
       opacity: 0.5;
     }
 
-    @media (min-width: $desktop) {
-      margin-bottom: 25px;
+    @media (max-width: $desktop) {
+      margin-bottom: 18px;
     }
 
     & span {
