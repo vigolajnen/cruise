@@ -62,7 +62,7 @@ html {
   max-width: 1366px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 75px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   @media (max-width: 1023px) {
@@ -98,7 +98,7 @@ html {
   position: relative;
   width: 100%;
   max-width: 100%;
-  padding: 33px 0;
+  padding: 35px 0;
   background-color: transparent; }
   @media (max-width: 1023px) {
     .page-header {
@@ -259,7 +259,7 @@ html {
               flex-direction: column; } }
 
 .navigation__item:not(:last-child) {
-  margin-right: 32px; }
+  margin-right: 34px; }
   @media (max-width: 1023px) {
     .navigation__item:not(:last-child) {
       margin-right: 25px; } }
@@ -285,7 +285,7 @@ html {
       line-height: 15px; } }
 
 .navigation--footer .navigation__item {
-  margin-bottom: 8px; }
+  margin-bottom: 0; }
   .navigation--footer .navigation__item:not(:last-child) {
     margin-right: 32px; }
   @media (max-width: 1023px) {
@@ -320,8 +320,8 @@ html {
     .promo {
       min-height: 423px; } }
   .promo__container {
-    padding-top: 164px;
-    max-width: 1163px; }
+    padding-top: 162px;
+    max-width: 1125px; }
     @media (max-width: 1023px) {
       .promo__container {
         padding-top: 178px; } }
@@ -350,12 +350,12 @@ html {
   .promo p {
     margin: 0;
     font-size: 20px;
-    line-height: 24px; }
+    line-height: 24px;
+    letter-spacing: 0.01em; }
     @media (max-width: 1023px) {
       .promo p {
         font-size: 18px;
-        line-height: 22px;
-        letter-spacing: 0.01em; } }
+        line-height: 22px; } }
     @media (max-width: 767px) {
       .promo p {
         padding-right: 60px;
@@ -363,7 +363,7 @@ html {
         line-height: 140%; } }
 
 .about {
-  padding: 110px 0 113px; }
+  padding: 110px 0 117px; }
   @media (max-width: 1023px) {
     .about {
       padding: 90px 0 60px; } }
@@ -447,7 +447,7 @@ html {
         letter-spacing: 0.04em; } }
 
 .advantage {
-  padding: 107px 0 87px;
+  padding: 107px 0 90px;
   background-image: url("../img/advantage/advantage.jpg");
   background-size: cover;
   background-position: center;
@@ -471,7 +471,7 @@ html {
     .advantage {
       background-image: url("../img/advantage/advantage@2x.jpg"); } }
   .advantage__container h2 {
-    margin: 0 auto 48px;
+    margin: 0 auto 50px;
     font-size: 28px;
     line-height: 150%;
     font-weight: 600;
@@ -502,7 +502,7 @@ html {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    padding: 30px;
+    padding: 30px 30px 26px 30px;
     margin-bottom: 30px;
     max-width: calc(33.33% - 27px);
     width: 100%;
@@ -547,18 +547,18 @@ html {
     .advantage__item p {
       margin: 0;
       font-size: 14px;
-      line-height: 140%; }
+      line-height: 143%; }
       @media (max-width: 1023px) {
         .advantage__item p {
           padding-right: 5px;
-          line-height: 143%;
           letter-spacing: 0.027em; } }
       @media (max-width: 767px) {
         .advantage__item p {
           padding-right: 0;
           letter-spacing: 0.027em; } }
   .advantage__icon {
-    height: 32px; }
+    height: 32px;
+    margin-bottom: 13px; }
     @media (max-width: 1023px) {
       .advantage__icon {
         margin-bottom: 11px;
@@ -569,7 +569,7 @@ html {
         height: 25px; } }
 
 .nearest-cruises {
-  padding: 108px 0 87px; }
+  padding: 108px 0 92px; }
   @media (max-width: 1023px) {
     .nearest-cruises {
       padding: 89px 0 74px; } }
@@ -577,7 +577,7 @@ html {
     .nearest-cruises {
       padding: 55px 0 34px; } }
   .nearest-cruises__container {
-    padding: 0 115px; }
+    padding: 0 88px; }
     @media (max-width: 1023px) {
       .nearest-cruises__container {
         padding: 0 50px; } }
@@ -585,7 +585,7 @@ html {
       .nearest-cruises__container {
         padding: 0 16px; } }
   .nearest-cruises h2 {
-    margin: 0 auto 48px;
+    margin: 0 auto 50px;
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
@@ -666,12 +666,9 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 382px;
+  min-height: 385px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  @media (max-width: 1023px) {
-    .cruise {
-      min-height: 385px; } }
   .cruise:focus .cruise__info, .cruise:hover .cruise__info {
     height: auto;
     opacity: 1;
@@ -698,12 +695,14 @@ html {
     background-color: #011c40;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    @media (max-width: 1023px) {
-      .cruise:focus .cruise__inner h3, .cruise:hover .cruise__inner h3 {
-        padding: 27px 35px 15px; } }
-    @media (max-width: 767px) {
-      .cruise:focus .cruise__inner h3, .cruise:hover .cruise__inner h3 {
-        padding: 30px 26px 15px; } }
+    .cruise:focus .cruise__inner h3, .cruise:hover .cruise__inner h3 {
+      padding: 29px 27px 15px 27px; }
+      @media (max-width: 1023px) {
+        .cruise:focus .cruise__inner h3, .cruise:hover .cruise__inner h3 {
+          padding: 27px 35px 15px; } }
+      @media (max-width: 767px) {
+        .cruise:focus .cruise__inner h3, .cruise:hover .cruise__inner h3 {
+          padding: 30px 26px 15px; } }
   .cruise img {
     position: absolute;
     top: 0;
@@ -731,13 +730,10 @@ html {
         -ms-flex-pack: end;
             justify-content: flex-end;
     min-height: 100%;
-    height: 382px; }
-    @media (max-width: 1023px) {
-      .cruise__inner {
-        height: 385px; } }
+    height: 385px; }
     .cruise__inner h3 {
       margin: 0;
-      padding: 23px 30px;
+      padding: 21px 30px;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;
@@ -786,7 +782,7 @@ html {
     max-height: 40px; }
 
 .booking {
-  padding: 48px 0 48px;
+  padding: 50px 0;
   background-image: url("../img/booking/booking.jpg");
   background-size: cover;
   background-position: center;
@@ -822,6 +818,7 @@ html {
         -ms-flex-align: center;
             align-items: center; }
   .booking h2 {
+    margin: 0;
     margin-bottom: 10px;
     font-size: 40px;
     line-height: 150%;
@@ -843,8 +840,8 @@ html {
         line-height: 130%;
         text-align: center; } }
   .booking p {
-    margin-right: auto;
-    margin-left: 0;
+    max-width: 343px;
+    margin: 0 auto 0 0;
     text-align: left; }
     @media (max-width: 1023px) {
       .booking p {
@@ -865,7 +862,7 @@ html {
   .booking__info {
     width: 50%;
     padding-left: 60px;
-    padding-top: 45px;
+    margin-top: -10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     @media (max-width: 1023px) {
@@ -934,7 +931,7 @@ html {
          object-fit: cover; }
   .contacts__info {
     width: 43%;
-    padding-top: 30px;
+    padding-top: 17px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     @media (max-width: 1023px) {
@@ -1057,7 +1054,7 @@ html {
     font-size: 18px;
     line-height: 140%;
     color: #f9fbfd;
-    text-align: center; }
+    text-align: left; }
     @media (max-width: 1023px) {
       .form__title {
         margin-bottom: 30px;
@@ -1085,11 +1082,13 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 35px;
     font-size: 10px;
     line-height: 130%; }
     @media (max-width: 1023px) {
       .form label[for="check"] {
-        line-height: 190%; } }
+        line-height: 190%;
+        margin-bottom: 20px; } }
     @media (max-width: 767px) {
       .form label[for="check"] {
         margin-bottom: 28px;

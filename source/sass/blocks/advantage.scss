@@ -1,5 +1,5 @@
 .advantage {
-  padding: 107px 0 87px;
+  padding: 107px 0 90px;
   background-image: url("../img/advantage/advantage.jpg");
   background-size: cover;
   background-position: center;
@@ -30,7 +30,7 @@
 
   &__container {
     & h2 {
-      margin: 0 auto 48px;
+      margin: 0 auto 50px;
       font-size: 28px;
       line-height: 150%;
       font-weight: 600;
@@ -62,7 +62,7 @@
 
   &__item {
     flex-grow: 0;
-    padding: 30px;
+    padding: 30px 30px 26px 30px;
     margin-bottom: 30px;
     max-width: calc(33.33% - 27px);
     width: 100%;
@@ -129,13 +129,13 @@
       margin: 0;
 
       font-size: 14px;
-      line-height: 140%;
+      line-height: 143%;
 
       @media (max-width: $desktop) {
         padding-right: 5px;
-        line-height: 143%;
         letter-spacing: 0.027em;
       }
+
       @media (max-width: $table) {
         padding-right: 0;
         letter-spacing: 0.027em;
@@ -145,6 +145,7 @@
 
   &__icon {
     height: 32px;
+    margin-bottom: 13px;
 
     @media (max-width: $desktop) {
       margin-bottom: 11px;

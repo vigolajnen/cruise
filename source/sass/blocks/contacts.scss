@@ -41,7 +41,7 @@
 
   &__info {
     width: 43%;
-    padding-top: 30px;
+    padding-top: 17px;
     box-sizing: border-box;
 
     @media (max-width: $desktop) {
@@ -86,6 +86,7 @@
     @media (max-width: $desktop) {
       line-height: 130%;
     }
+
     @media (max-width: $table) {
       margin-bottom: 20px;
       line-height: 150%;

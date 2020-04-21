@@ -121,7 +121,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 32px;
+      margin-right: 34px;
 
       @media (max-width: $desktop) {
         margin-right: 25px;
@@ -160,7 +160,7 @@
 
 .navigation--footer {
   & .navigation__item {
-    margin-bottom: 8px;
+    margin-bottom: 0;
 
     &:not(:last-child) {
       margin-right: 32px;
@@ -184,6 +184,7 @@
       font-size: 12px;
       line-height: 15px;
     }
+
     @media (max-width: $table) {
       margin-bottom: 18px;
     }

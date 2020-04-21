@@ -9,13 +9,14 @@
   @media (max-width: $desktop) {
     min-height: 546px;
   }
+
   @media (max-width: $table) {
     min-height: 423px;
   }
 
   &__container {
-    padding-top: 164px;
-    max-width: 1163px;
+    padding-top: 162px;
+    max-width: 1125px;
 
     @media (max-width: $desktop) {
       padding-top: 178px;
@@ -58,11 +59,11 @@
 
     font-size: 20px;
     line-height: 24px;
+    letter-spacing: 0.01em;
 
     @media (max-width: $desktop) {
       font-size: 18px;
       line-height: 22px;
-      letter-spacing: 0.01em;
     }
 
     @media (max-width: $table) {

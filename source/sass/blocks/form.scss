@@ -17,7 +17,7 @@
     font-size: 18px;
     line-height: 140%;
     color: #f9fbfd;
-    text-align: center;
+    text-align: left;
 
     @media (max-width: $desktop) {
       margin-bottom: 30px;
@@ -50,13 +50,16 @@
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 35px;
 
     font-size: 10px;
     line-height: 130%;
 
     @media (max-width: $desktop) {
       line-height: 190%;
+      margin-bottom: 20px;
     }
+
     @media (max-width: $table) {
       margin-bottom: 28px;
       letter-spacing: 0.04em;
@@ -163,6 +166,7 @@
     @media (max-width: $desktop) {
       margin-top: 10px;
     }
+
     @media (max-width: $table) {
       margin-top: 0;
     }
