@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $table) {
-    padding: 55px 0 40px;
+    padding: 55px 0 42px;
   }
 
   &__container {
@@ -17,7 +17,7 @@
     }
 
     @media (max-width: $table) {
-      padding: 0 22px;
+      padding: 0 16px;
     }
   }
 
@@ -38,7 +38,7 @@
     }
 
     @media (max-width: $table) {
-      margin: 0 auto 30px;
+      margin: 0 auto 34px;
       max-width: 100%;
       font-size: 24px;
       line-height: 140%;
@@ -95,7 +95,7 @@
     }
 
     @media (max-width: 520px) {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
       max-width: 100%;
 
       &:not(:nth-child(4n)) {

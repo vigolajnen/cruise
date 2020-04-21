@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $table) {
-    min-height: 365px;
+    min-height: 385px;
   }
 
   &:focus,
@@ -44,21 +44,11 @@
       color: $default-color;
       background-color: $primary-color;
       box-sizing: border-box;
-    }
 
-    & .cruise__title {
-      padding: 28px 25px 12px;
-      margin-bottom: 5px;
-      overflow: hidden;
-      max-height: 60px;
-
-      @media (max-width: $desktop) {
-        padding: 28px 33px 12px;
-        margin-bottom: 7px;
-      }
-
-      @media (max-width: $table) {
-        padding: 28px 25px 12px;
+      & h3 {
+        @media (max-width: $table) {
+          padding: 30px 26px 15px;
+        }
       }
     }
   }
@@ -136,6 +126,10 @@
     @media (max-width: $desktop) {
       margin-top: 20px;
     }
+
+    @media (max-width: $table) {
+      margin-top: 24px;
+    }
   }
 
   &__item {
@@ -144,7 +138,7 @@
     line-height: 140%;
 
     @media (max-width: $table) {
-      margin-bottom: 7px;
+      margin-bottom: 9px;
     }
   }
 

@@ -3,8 +3,8 @@
     display: none;
     z-index: 5;
     position: absolute;
-    top: 19px;
-    right: 8px;
+    top: 21px;
+    right: 2px;
     height: 27px;
 
     border: none;
@@ -176,12 +176,16 @@
   }
 
   & .navigation__link {
+    display: block;
     font-size: 16px;
     line-height: 20px;
 
     @media (max-width: $desktop) {
       font-size: 12px;
       line-height: 15px;
+    }
+    @media (max-width: $table) {
+      margin-bottom: 18px;
     }
   }
 }

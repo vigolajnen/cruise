@@ -1,3 +1,4 @@
+@import url(../../node_modules/pixel-glass/styles.css);
 @font-face {
   font-family: "Montserrat", "Arial", sans-serif;
   font-display: auto;
@@ -69,7 +70,7 @@ html {
       padding: 0 45px; } }
   @media (max-width: 767px) {
     .container {
-      padding: 0 15px; } }
+      padding: 0 8px; } }
 
 .header-and-promo {
   background-image: url("../img/promo/promo.jpg");
@@ -160,8 +161,8 @@ html {
   display: none;
   z-index: 5;
   position: absolute;
-  top: 19px;
-  right: 8px;
+  top: 21px;
+  right: 2px;
   height: 27px;
   border: none;
   border-radius: 0;
@@ -286,12 +287,16 @@ html {
         margin-right: 20px; } }
 
 .navigation--footer .navigation__link {
+  display: block;
   font-size: 16px;
   line-height: 20px; }
   @media (max-width: 1023px) {
     .navigation--footer .navigation__link {
       font-size: 12px;
       line-height: 15px; } }
+  @media (max-width: 767px) {
+    .navigation--footer .navigation__link {
+      margin-bottom: 18px; } }
 
 .promo {
   position: relative;
@@ -302,7 +307,7 @@ html {
           box-sizing: border-box; }
   @media (max-width: 1023px) {
     .promo {
-      min-height: 405px; } }
+      min-height: 423px; } }
   .promo__container {
     padding-top: 164px;
     max-width: 1163px; }
@@ -311,7 +316,7 @@ html {
         padding-top: 178px; } }
     @media (max-width: 767px) {
       .promo__container {
-        padding-top: 96px; } }
+        padding-top: 100px; } }
   .promo h1 {
     margin: 0 0 12px 0;
     margin-bottom: 12px;
@@ -325,9 +330,12 @@ html {
         line-height: 61px; } }
     @media (max-width: 767px) {
       .promo h1 {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         font-size: 36px;
         line-height: 125%; } }
+    @media (max-width: 767px) {
+      .promo h1 span {
+        display: block; } }
   .promo p {
     margin: 0;
     font-size: 20px;
@@ -338,6 +346,7 @@ html {
         line-height: 22px; } }
     @media (max-width: 767px) {
       .promo p {
+        padding-right: 60px;
         font-size: 16px;
         line-height: 140%; } }
 
@@ -348,7 +357,7 @@ html {
       padding: 87px 0 50px; } }
   @media (max-width: 767px) {
     .about {
-      padding: 53px 0 55px; } }
+      padding: 57px 0 60px; } }
   .about__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -403,7 +412,7 @@ html {
         font-size: 26px; } }
     @media (max-width: 767px) {
       .about__text h2 {
-        margin-bottom: 13px;
+        margin-bottom: 17px;
         max-width: 190px;
         font-size: 24px;
         line-height: 140%; } }
@@ -414,9 +423,11 @@ html {
     font-size: 16px; }
     @media (max-width: 767px) {
       .about__text p {
-        margin-bottom: 38px;
+        margin-bottom: 32px;
+        padding-right: 0;
         font-size: 15px;
-        line-height: 150%; } }
+        line-height: 160%;
+        letter-spacing: 0.04em; } }
 
 .advantage {
   padding: 107px 0 87px;
@@ -431,7 +442,7 @@ html {
       background-image: url("../img/advantage/advantage-tablet.jpg"); } }
   @media (max-width: 767px) {
     .advantage {
-      padding: 55px 0 40px;
+      padding: 55px 0 38px;
       background-image: url("../img/advantage/advantage-mob.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
     .advantage {
@@ -457,7 +468,7 @@ html {
         line-height: 140%; } }
     @media (max-width: 1023px) {
       .advantage__container h2 {
-        margin-bottom: 50px;
+        margin-bottom: 33px;
         max-width: 205px;
         font-size: 26px; } }
   .advantage__list {
@@ -495,30 +506,37 @@ html {
       .advantage__item {
         margin: 0;
         margin-bottom: 30px;
-        padding: 25px 18px; } }
+        padding: 25px 16px 20px; } }
     @media (max-width: 650px) {
       .advantage__item {
         max-width: 100%; }
         .advantage__item:not(:nth-child(3n)) {
           margin-right: 0; } }
+    @media (max-width: 767px) {
+      .advantage__item--pr p {
+        padding-right: 26px; } }
     .advantage__item h3 {
       max-width: 100%;
       margin: 0;
-      margin-bottom: 8px;
+      margin-bottom: 7px;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%; }
       @media (max-width: 1023px) {
         .advantage__item h3 {
           max-width: 200px; } }
+      @media (max-width: 1023px) {
+        .advantage__item h3 span {
+          display: block; } }
     .advantage__item p {
       margin: 0;
       font-size: 14px;
       line-height: 140%; }
       @media (max-width: 767px) {
         .advantage__item p {
-          font-size: 13px;
-          line-height: 130%; } }
+          font-size: 14px;
+          line-height: 143%;
+          letter-spacing: 0.027em; } }
   .advantage__icon {
     height: 32px; }
     @media (max-width: 1023px) {
@@ -526,7 +544,7 @@ html {
         height: 27px; } }
     @media (max-width: 767px) {
       .advantage__icon {
-        height: 22px;
+        height: 25px;
         margin-bottom: 11px; } }
 
 .nearest-cruises {
@@ -536,7 +554,7 @@ html {
       padding: 87px 0 70px; } }
   @media (max-width: 767px) {
     .nearest-cruises {
-      padding: 55px 0 40px; } }
+      padding: 55px 0 42px; } }
   .nearest-cruises__container {
     padding: 0 115px; }
     @media (max-width: 1023px) {
@@ -544,7 +562,7 @@ html {
         padding: 0 60px; } }
     @media (max-width: 767px) {
       .nearest-cruises__container {
-        padding: 0 22px; } }
+        padding: 0 16px; } }
   .nearest-cruises h2 {
     margin: 0 auto 48px;
     font-weight: 600;
@@ -559,7 +577,7 @@ html {
         font-size: 26px; } }
     @media (max-width: 767px) {
       .nearest-cruises h2 {
-        margin: 0 auto 30px;
+        margin: 0 auto 34px;
         max-width: 100%;
         font-size: 24px;
         line-height: 140%; } }
@@ -606,7 +624,7 @@ html {
           margin-right: 30px; } }
     @media (max-width: 520px) {
       .nearest-cruises__item {
-        margin-bottom: 28px;
+        margin-bottom: 30px;
         max-width: 100%; }
         .nearest-cruises__item:not(:nth-child(4n)) {
           margin-right: 0; }
@@ -635,7 +653,7 @@ html {
       height: 376px; } }
   @media (max-width: 767px) {
     .cruise {
-      min-height: 365px; } }
+      min-height: 385px; } }
   .cruise:focus .cruise__info, .cruise:hover .cruise__info {
     height: auto;
     opacity: 1;
@@ -662,18 +680,9 @@ html {
     background-color: #011c40;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-  .cruise:focus .cruise__title, .cruise:hover .cruise__title {
-    padding: 28px 25px 12px;
-    margin-bottom: 5px;
-    overflow: hidden;
-    max-height: 60px; }
-    @media (max-width: 1023px) {
-      .cruise:focus .cruise__title, .cruise:hover .cruise__title {
-        padding: 28px 33px 12px;
-        margin-bottom: 7px; } }
     @media (max-width: 767px) {
-      .cruise:focus .cruise__title, .cruise:hover .cruise__title {
-        padding: 28px 25px 12px; } }
+      .cruise:focus .cruise__inner h3, .cruise:hover .cruise__inner h3 {
+        padding: 30px 26px 15px; } }
   .cruise img {
     position: absolute;
     top: 0;
@@ -738,13 +747,16 @@ html {
     @media (max-width: 1023px) {
       .cruise__link {
         margin-top: 20px; } }
+    @media (max-width: 767px) {
+      .cruise__link {
+        margin-top: 24px; } }
   .cruise__item {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 140%; }
     @media (max-width: 767px) {
       .cruise__item {
-        margin-bottom: 7px; } }
+        margin-bottom: 9px; } }
   .cruise__item-title {
     margin-bottom: 4px;
     font-weight: 500; }
@@ -765,7 +777,7 @@ html {
       background-image: url("../img/booking/booking-tablet.jpg"); } }
   @media (max-width: 767px) {
     .booking {
-      padding: 54px 0 58px;
+      padding: 58px 0 65px;
       background-image: url("../img/booking/booking-mob.jpg"); } }
   @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
     .booking {
@@ -820,10 +832,12 @@ html {
     @media (max-width: 767px) {
       .booking p {
         margin: 0 auto;
-        max-width: 257px;
         font-size: 16px;
         line-height: 140%;
         text-align: center; } }
+    @media (max-width: 767px) {
+      .booking p span {
+        display: block; } }
   .booking__info {
     width: 50%;
     padding-left: 60px;
@@ -839,7 +853,7 @@ html {
       .booking__info {
         width: 100%;
         padding: 0;
-        margin: 0 auto 27px; } }
+        margin: 0 auto 35px; } }
   .booking__wrapper {
     max-width: 305px; }
   .booking__form {
@@ -860,7 +874,7 @@ html {
       padding: 100px 0 87px; } }
   @media (max-width: 767px) {
     .contacts {
-      padding: 53px 0; } }
+      padding: 37px 0 57px; } }
   .contacts__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -914,7 +928,9 @@ html {
     font-weight: 500; }
     @media (max-width: 767px) {
       .contacts p {
-        margin-bottom: 20px; } }
+        margin-bottom: 28px;
+        padding-right: 2px;
+        letter-spacing: 0.001em; } }
   .contacts__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -931,13 +947,16 @@ html {
             box-sizing: border-box; }
     .contacts__link:focus, .contacts__link:hover {
       opacity: 0.5; }
-    @media (max-width: 1023px) {
+    @media (max-width: 767px) {
       .contacts__link {
-        margin-bottom: 18px; } }
-    .contacts__link span {
-      width: 90%;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
+        margin-bottom: 20px; } }
+  .contacts__text {
+    width: 90%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    @media (max-width: 767px) {
+      .contacts__text span {
+        display: block; } }
   .contacts__icon {
     margin-right: 9px; }
 
@@ -981,7 +1000,7 @@ html {
       background-image: url("../img/contacts/map-table.jpg"); } }
   @media (max-width: 767px) {
     .map {
-      min-height: 306px;
+      min-height: 333px;
       background-image: url("../img/contacts/map-mob.jpg"); } }
 
 .form {
@@ -1010,7 +1029,10 @@ html {
         margin-bottom: 26px; } }
     @media (max-width: 767px) {
       .form__title {
-        margin-bottom: 19px; } }
+        margin-bottom: 28px; } }
+    @media (max-width: 767px) {
+      .form__title span {
+        display: block; } }
   .form label {
     margin-bottom: 20px;
     color: #f9fbfd;
@@ -1018,7 +1040,7 @@ html {
             box-sizing: border-box; }
     @media (max-width: 767px) {
       .form label {
-        margin-bottom: 16px; } }
+        margin-bottom: 20px; } }
   .form label[for="check"] {
     position: relative;
     display: -webkit-box;
@@ -1029,12 +1051,18 @@ html {
             align-items: center;
     font-size: 10px;
     line-height: 130%; }
+    @media (max-width: 767px) {
+      .form label[for="check"] {
+        margin-bottom: 28px;
+        letter-spacing: 0.04em;
+        line-height: 110%; } }
   .form input[type="text"],
   .form input[type="email"] {
-    padding: 11px 20px;
+    padding: 9px 14px;
     width: 100%;
     font-size: 14px;
     line-height: 150%;
+    letter-spacing: 0.04em;
     border: 2px solid transparent;
     border-radius: 0;
     background-color: #f9fbfd;
@@ -1051,16 +1079,16 @@ html {
   .form input[type="checkbox"]:not(:checked) + span,
   .form input[type="checkbox"]:checked + span {
     position: relative;
-    padding-left: 1.95em;
+    padding-left: 27px;
     cursor: pointer; }
   .form input[type="checkbox"]:not(:checked) + span::before,
   .form input[type="checkbox"]:checked + span::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 1.5em;
-    height: 1.5em;
+    left: -2px;
+    top: -1px;
+    width: 21px;
+    height: 22px;
     border: 2px solid #101a56;
     background: #f9fbfd;
     border-radius: 0;
@@ -1075,8 +1103,8 @@ html {
   .form input[type="checkbox"]:checked + span::after {
     content: " ";
     position: absolute;
-    top: 0.2em;
-    left: 0.2em;
+    top: 0.5em;
+    left: 0.3em;
     width: 10px;
     height: 10px;
     background-position: center;
@@ -1117,7 +1145,7 @@ html {
       padding: 46px 0; } }
   @media (max-width: 767px) {
     .page-footer {
-      padding: 40px 0; } }
+      padding: 40px 0 33px; } }
   .page-footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1158,7 +1186,7 @@ html {
     margin: 0; }
     @media (max-width: 767px) {
       .page-footer__nav {
-        margin-top: 11px;
+        margin-top: 8px;
         margin-bottom: 8px; } }
   .page-footer__social {
     margin-left: auto; }

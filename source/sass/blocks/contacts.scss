@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $table) {
-    padding: 53px 0;
+    padding: 37px 0 57px;
   }
 
   &__container {
@@ -61,7 +61,9 @@
     font-weight: 500;
 
     @media (max-width: $table) {
-      margin-bottom: 20px;
+      margin-bottom: 28px;
+      padding-right: 2px;
+      letter-spacing: 0.001em;
     }
   }
 
@@ -80,13 +82,19 @@
       opacity: 0.5;
     }
 
-    @media (max-width: $desktop) {
-      margin-bottom: 18px;
+    @media (max-width: $table) {
+      margin-bottom: 20px;
     }
+  }
+
+  &__text {
+    width: 90%;
+    box-sizing: border-box;
 
     & span {
-      width: 90%;
-      box-sizing: border-box;
+      @media (max-width: $table) {
+        display: block;
+      }
     }
   }
 

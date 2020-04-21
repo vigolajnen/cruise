@@ -12,7 +12,7 @@
   }
 
   @media (max-width: $table) {
-    padding: 54px 0 58px;
+    padding: 58px 0 65px;
 
     background-image: url("../img/booking/booking-mob.jpg");
   }
@@ -74,10 +74,15 @@
 
     @media (max-width: $table) {
       margin: 0 auto;
-      max-width: 257px;
       font-size: 16px;
       line-height: 140%;
       text-align: center;
+    }
+
+    & span {
+      @media (max-width: $table) {
+        display: block;
+      }
     }
   }
 
@@ -96,7 +101,7 @@
     @media (max-width: $table) {
       width: 100%;
       padding: 0;
-      margin: 0 auto 27px;
+      margin: 0 auto 35px;
     }
   }
 
