@@ -11,6 +11,7 @@
   @media (min-width: $table) {
     height: 376px;
   }
+
   @media (min-width: $desktop) {
     height: 382px;
   }
@@ -26,10 +27,12 @@
       @media (min-width: $table) {
         padding: 0 33px;
       }
+
       @media (min-width: $desktop) {
         padding: 0 25px;
       }
     }
+
     & .cruise__inner {
       position: absolute;
       top: 0;
@@ -42,6 +45,7 @@
       background-color: $primary-color;
       box-sizing: border-box;
     }
+
     & .cruise__title {
       padding: 28px 25px 12px;
       margin-bottom: 5px;
@@ -52,6 +56,7 @@
         padding: 28px 33px 12px;
         margin-bottom: 7px;
       }
+
       @media (min-width: $desktop) {
         padding: 28px 25px 12px;
       }
@@ -66,12 +71,14 @@
     height: 100%;
     object-fit: cover;
   }
+
   &__info {
     position: relative;
     height: 0;
     opacity: 0;
     padding: 0 30px;
   }
+
   &__inner {
     position: relative;
     overflow: hidden;
@@ -84,6 +91,7 @@
     @media (min-width: $table) {
       height: 376px;
     }
+
     @media (min-width: $desktop) {
       height: 382px;
     }
@@ -96,11 +104,13 @@
       line-height: 150%;
       color: $default-color;
       box-sizing: border-box;
+
       @media (min-width: $table) {
         padding: 23px 30px;
       }
     }
   }
+
   &__title {
     margin: 0;
     padding: 16px 26px;
@@ -109,6 +119,7 @@
     line-height: 150%;
     color: $default-color;
     box-sizing: border-box;
+
     @media (min-width: $table) {
       padding: 23px 30px;
     }
@@ -132,22 +143,27 @@
     &:hover {
       opacity: 0.5;
     }
+
     @media (min-width: $desktop) {
       margin-top: 23px;
     }
   }
+
   &__item {
     margin-bottom: 7px;
     font-size: 14px;
     line-height: 140%;
+
     @media (min-width: $table) {
       margin-bottom: 10px;
     }
   }
+
   &__item-title {
     margin-bottom: 4px;
     font-weight: 500;
   }
+
   &__item-val {
     overflow: hidden;
     max-height: 40px;

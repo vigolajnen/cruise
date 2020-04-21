@@ -9,15 +9,18 @@
   @media (min-width: $table) {
     min-height: 540px;
   }
+
   @media (min-width: $desktop) {
     min-height: 540px;
   }
 
   &__container {
     padding-top: 96px;
+
     @media (min-width: $table) {
       padding-top: 178px;
     }
+
     @media (min-width: $desktop) {
       padding-top: 164px;
       max-width: 1163px;
@@ -35,12 +38,14 @@
       font-size: 50px;
       line-height: 61px;
     }
+
     @media (min-width: $desktop) {
       margin-bottom: 12px;
       font-size: 54px;
       line-height: 66px;
     }
   }
+
   & p {
     margin: 0;
     font-size: 16px;
@@ -50,6 +55,7 @@
       font-size: 18px;
       line-height: 22px;
     }
+
     @media (min-width: $desktop) {
       font-size: 20px;
       line-height: 24px;

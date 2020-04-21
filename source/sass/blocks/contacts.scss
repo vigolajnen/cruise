@@ -4,15 +4,18 @@
   @media (min-width: $table) {
     padding: $section-pd-sm 0 87px;
   }
+
   @media (min-width: $desktop) {
     padding: $section-pd-md 0 110px;
   }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
+
   &__map {
     order: 1;
     width: 100%;
@@ -23,6 +26,7 @@
       order: 0;
       width: 48%;
     }
+
     @media (min-width: $desktop) {
       width: 48%;
     }
@@ -34,6 +38,7 @@
       object-fit: cover;
     }
   }
+
   &__info {
     width: 100%;
 
@@ -43,16 +48,19 @@
       width: 48%;
       padding-top: 21px;
     }
+
     @media (min-width: $desktop) {
       width: 43%;
       padding-top: 30px;
     }
   }
+
   & p {
     margin: 0 0 20px 0;
     font-size: 18px;
     line-height: 150%;
     font-weight: 500;
+
     @media (min-width: $table) {
       margin-bottom: 29px;
     }
@@ -82,6 +90,7 @@
       box-sizing: border-box;
     }
   }
+
   &__icon {
     margin-right: 9px;
   }

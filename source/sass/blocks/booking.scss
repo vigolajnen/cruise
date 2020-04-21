@@ -11,6 +11,7 @@
     padding: 88px 0 97px;
     background-image: url("../img/booking/booking-tablet.jpg");
   }
+
   @media (min-width: $desktop) {
     padding: 48px 0 48px;
     background-image: url("../img/booking/booking.jpg");
@@ -34,6 +35,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   & h2 {
     max-width: 200px;
     margin: 0 auto 14px;
@@ -48,6 +50,7 @@
       font-size: 34px;
       line-height: 150%;
     }
+
     @media (min-width: $desktop) {
       margin-bottom: 10px;
       font-size: 40px;
@@ -55,25 +58,30 @@
       text-align: left;
     }
   }
+
   & p {
     margin: 0 auto;
     max-width: 257px;
     font-size: 16px;
     line-height: 140%;
     text-align: center;
+
     @media (min-width: 767px) {
       max-width: 352px;
     }
+
     @media (min-width: $table) {
       font-size: 18px;
       line-height: 150%;
     }
+
     @media (min-width: $desktop) {
       margin-right: auto;
       margin-left: 0;
       text-align: left;
     }
   }
+
   &__info {
     width: 100%;
     margin: 0 auto 27px;
@@ -82,6 +90,7 @@
     @media (min-width: $table) {
       margin-bottom: 48px;
     }
+
     @media (min-width: $desktop) {
       width: 50%;
       padding-left: 60px;
@@ -97,8 +106,7 @@
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    @media (min-width: $table) {
-    }
+
     @media (min-width: $desktop) {
       width: 50%;
       padding-left: 55px;

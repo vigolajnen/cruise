@@ -9,9 +9,11 @@
   &__item {
     &:not(:last-child) {
       margin-right: 18px;
+
       @media (min-width: $table) {
         margin-right: 16px;
       }
+
       @media (min-width: $desktop) {
         margin-right: 33px;
       }
@@ -19,6 +21,7 @@
 
     & svg {
       height: 16px;
+
       @media (min-width: $desktop) {
         height: 20px;
       }

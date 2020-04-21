@@ -4,6 +4,7 @@
   @media (min-width: $table) {
     padding: 87px 0 50px;
   }
+
   @media (min-width: $desktop) {
     padding: 110px 0 113px;
   }
@@ -21,9 +22,11 @@
   &__info {
     width: auto;
     box-sizing: border-box;
+
     @media (min-width: $table) {
       width: 52%;
     }
+
     @media (min-width: $desktop) {
       width: 50%;
       padding: 65px 40px 0 0;
@@ -32,11 +35,11 @@
 
   &__pic {
     box-sizing: border-box;
+
     @media (min-width: $table) {
       width: 48%;
     }
-    @media (min-width: $desktop) {
-    }
+
     & img {
       max-width: 100%;
       width: 100%;
@@ -64,6 +67,7 @@
         max-width: 205px;
         font-size: 26px;
       }
+
       @media (min-width: $desktop) {
         margin-bottom: 26px;
         font-size: 28px;
@@ -77,6 +81,7 @@
       margin-bottom: 38px;
       font-size: 15px;
       line-height: 150%;
+
       @media (min-width: $table) {
         padding-right: 18px;
         margin-bottom: 35px;

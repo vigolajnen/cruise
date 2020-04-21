@@ -6,9 +6,11 @@
   @media (min-width: $table) {
     padding: 46px 0;
   }
+
   @media (min-width: $desktop) {
     padding: 50px 0;
   }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -21,24 +23,29 @@
       justify-content: space-between;
     }
   }
+
   &__logo {
     margin-right: 25px;
 
     @media (min-width: $desktop) {
       margin-right: 15px;
     }
+
     @media (min-width: 1200px) {
       margin-right: 40px;
     }
   }
+
   &__nav {
     margin-top: 11px;
     margin-bottom: 8px;
+
     @media (min-width: $table) {
       margin-bottom: 0;
       margin-top: 0;
     }
   }
+
   &__social {
     @media (min-width: $table) {
       margin-left: auto;
