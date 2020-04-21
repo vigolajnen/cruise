@@ -3,7 +3,7 @@
   background-color: $primary-color;
 
   @media (max-width: $desktop) {
-    padding: 46px 0;
+    padding: 42px 0;
   }
 
   @media (max-width: $table) {
@@ -33,15 +33,32 @@
     }
 
     @media (max-width: $desktop) {
-      margin-right: 15px;
+      margin-right: 21px;
+    }
+    @media (max-width: $table) {
+      margin-right: 0;
+    }
+
+    & img {
+      @media (max-width: $desktop) {
+        height: 22px;
+        padding-top: 8px;
+      }
+      @media (max-width: $table) {
+        padding-top: 0;
+      }
     }
   }
 
   &__nav {
     margin: 0;
 
-    @media (max-width: $table) {
+    @media (max-width: $desktop) {
       margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    @media (max-width: $table) {
+      margin-top: 10px;
       margin-bottom: 8px;
     }
   }

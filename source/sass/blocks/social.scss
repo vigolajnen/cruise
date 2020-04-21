@@ -7,11 +7,19 @@
   list-style: none;
 
   &__item {
+    @media (max-width: $desktop) {
+      margin-top: 3px;
+    }
+
+    @media (max-width: $table) {
+      margin-top: 0;
+    }
+
     &:not(:last-child) {
       margin-right: 33px;
 
       @media (max-width: $desktop) {
-        margin-right: 16px;
+        margin-right: 20px;
       }
 
       @media (max-width: $table) {

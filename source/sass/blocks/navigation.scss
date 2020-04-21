@@ -124,7 +124,7 @@
       margin-right: 32px;
 
       @media (max-width: $desktop) {
-        margin-right: 18px;
+        margin-right: 25px;
       }
 
       @media (max-width: $table) {
@@ -170,7 +170,7 @@
       margin-bottom: 0;
 
       &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 24px;
       }
     }
   }

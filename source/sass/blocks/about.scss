@@ -2,7 +2,7 @@
   padding: 110px 0 113px;
 
   @media (max-width: $desktop) {
-    padding: 87px 0 50px;
+    padding: 90px 0 60px;
   }
 
   @media (max-width: $table) {
@@ -62,9 +62,10 @@
       max-width: 100%;
 
       @media (max-width: $desktop) {
-        margin-bottom: 18px;
+        margin-bottom: 15px;
         max-width: 205px;
         font-size: 26px;
+        line-height: 146%;
       }
 
       @media (max-width: $table) {
@@ -81,6 +82,11 @@
       padding-right: 18px;
       margin-bottom: 35px;
       font-size: 16px;
+
+      @media (max-width: $desktop) {
+        padding-right: 25px;
+        letter-spacing: 0.007em;
+      }
 
       @media (max-width: $table) {
         margin-bottom: 32px;

@@ -2,18 +2,18 @@
   padding: 108px 0 87px;
 
   @media (max-width: $desktop) {
-    padding: 87px 0 70px;
+    padding: 89px 0 74px;
   }
 
   @media (max-width: $table) {
-    padding: 55px 0 42px;
+    padding: 55px 0 34px;
   }
 
   &__container {
     padding: 0 115px;
 
     @media (max-width: $desktop) {
-      padding: 0 60px;
+      padding: 0 50px;
     }
 
     @media (max-width: $table) {
@@ -95,7 +95,7 @@
     }
 
     @media (max-width: 520px) {
-      margin-bottom: 30px;
+      margin-bottom: 31px;
       max-width: 100%;
 
       &:not(:nth-child(4n)) {

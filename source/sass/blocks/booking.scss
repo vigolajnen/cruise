@@ -7,7 +7,7 @@
   background-color: #daf2fe;
 
   @media (max-width: $desktop) {
-    padding: 88px 0 97px;
+    padding: 88px 0 100px;
     background-image: url("../img/booking/booking-tablet.jpg");
   }
 
@@ -44,6 +44,7 @@
     text-align: left;
 
     @media (max-width: $desktop) {
+      margin: 0;
       margin-bottom: 5px;
       max-width: 100%;
       font-size: 34px;
@@ -67,6 +68,8 @@
     text-align: left;
 
     @media (max-width: $desktop) {
+      max-width: 340px;
+      margin: 0 auto;
       font-size: 18px;
       line-height: 150%;
       text-align: center;
@@ -93,14 +96,13 @@
     box-sizing: border-box;
 
     @media (max-width: $desktop) {
-      margin: 0 auto 48px;
-      padding-left: 0;
+      margin: 0 auto 50px;
+      padding: 0;
+      width: 100%;
       text-align: center;
     }
 
     @media (max-width: $table) {
-      width: 100%;
-      padding: 0;
       margin: 0 auto 35px;
     }
   }

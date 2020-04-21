@@ -7,12 +7,12 @@
   background-color: #dde9f5;
 
   @media (max-width: $desktop) {
-    padding: 87px 0 65px;
+    padding: 87px 0 70px;
     background-image: url("../img/advantage/advantage-tablet.jpg");
   }
 
   @media (max-width: $table) {
-    padding: 55px 0 38px;
+    padding: 58px 0 36px;
     background-image: url("../img/advantage/advantage-mob.jpg");
   }
 
@@ -37,17 +37,15 @@
       max-width: 100%;
       text-align: center;
 
-      @media (max-width: $table) {
-        margin: 0 auto 30px;
-        max-width: 190px;
-        font-size: 24px;
-        line-height: 140%;
+      @media (max-width: $desktop) {
+        margin-bottom: 50px;
+        font-size: 26px;
       }
 
-      @media (max-width: $desktop) {
-        margin-bottom: 33px;
-        max-width: 205px;
-        font-size: 26px;
+      @media (max-width: $table) {
+        margin: 0 auto 32px;
+        font-size: 24px;
+        line-height: 140%;
       }
     }
   }
@@ -77,7 +75,7 @@
     }
 
     @media (max-width: $desktop) {
-      padding: 24px 13px 24px 20px;
+      padding: 24px 13px 20px 20px;
       max-width: calc(33.33% - 17px);
 
       &:not(:nth-child(3n)) {
@@ -88,7 +86,7 @@
     @media (max-width: $table) {
       margin: 0;
       margin-bottom: 30px;
-      padding: 25px 16px 20px;
+      padding: 25px 16px 19px;
     }
 
     @media (max-width: 650px) {
@@ -117,6 +115,7 @@
 
       @media (max-width: $desktop) {
         max-width: 200px;
+        margin-bottom: 8px;
       }
 
       & span {
@@ -132,9 +131,13 @@
       font-size: 14px;
       line-height: 140%;
 
-      @media (max-width: $table) {
-        font-size: 14px;
+      @media (max-width: $desktop) {
+        padding-right: 5px;
         line-height: 143%;
+        letter-spacing: 0.027em;
+      }
+      @media (max-width: $table) {
+        padding-right: 0;
         letter-spacing: 0.027em;
       }
     }
@@ -144,12 +147,13 @@
     height: 32px;
 
     @media (max-width: $desktop) {
+      margin-bottom: 11px;
       height: 27px;
     }
 
     @media (max-width: $table) {
+      margin-bottom: 12px;
       height: 25px;
-      margin-bottom: 11px;
     }
   }
 }
