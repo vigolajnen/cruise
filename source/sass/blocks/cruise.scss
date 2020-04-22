@@ -47,7 +47,7 @@
         }
 
         @media (max-width: $table) {
-          padding: 30px 26px 15px;
+          padding: 30px 26px 12px;
         }
       }
     }
@@ -125,7 +125,7 @@
 
 
     @media (max-width: $table) {
-      margin-top: 24px;
+      margin-bottom: 35px;
     }
   }
 
@@ -135,12 +135,12 @@
     line-height: 140%;
 
     @media (max-width: $table) {
-      margin-bottom: 9px;
+      margin-bottom: 11px;
     }
   }
 
   &__item-title {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     font-family: $mainFontMedium;
     font-weight: 500;
   }

@@ -12,7 +12,7 @@
   }
 
   @media (max-width: $table) {
-    padding: 58px 0 36px;
+    padding: 58px 0 37px;
     background-image: url("../img/advantage/advantage-mob.jpg");
   }
 
@@ -44,7 +44,7 @@
       }
 
       @media (max-width: $table) {
-        margin: 0 auto 32px;
+        margin: 0 auto 30px;
         font-size: 24px;
         line-height: 140%;
         letter-spacing: 0.07em;
@@ -62,7 +62,7 @@
     list-style: none;
 
     @media (max-width: $desktop) {
-      padding: 0 0 0 18px;
+      padding: 0 0 0 15px;
     }
 
     @media (max-width: $table) {
@@ -95,8 +95,8 @@
 
     @media (max-width: $table) {
       margin: 0;
-      margin-bottom: 30px;
-      padding: 25px 16px 19px;
+      margin-bottom: 27px;
+      padding: 27px 15px 19px 23px;
     }
 
     @media (max-width: 650px) {

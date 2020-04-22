@@ -14,10 +14,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
-    @media (max-width: $table) {
-      padding: 0 20px;
-    }
   }
 
   &__map {
@@ -56,6 +52,7 @@
 
     @media (max-width: $table) {
       padding-top: 21px;
+      padding-right: 5px;
       width: 100%;
     }
   }
