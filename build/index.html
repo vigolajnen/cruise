@@ -519,7 +519,7 @@
               <input id="name" type="text" placeholder="Валерия" required="">
             </label>
             <label for="phone" aria-label="Ваш телефон">
-              <input id="phone" type="text" placeholder="89236889975" pattern="^\+7(\s+)?\(?([0-9]{3})\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" required=""></label>
+              <input id="phone" type="text" placeholder="89236889975" onkeyup="javascript:mask('phone', '+7(000)000-00-00', event);" value="+7(___)___-____" required=""></label>
             <label for="email" aria-label="grishaewa.lera@gmail.com">
               <input id="email" type="email" placeholder="grishaewa.lera@gmail.com" required="">
             </label>
