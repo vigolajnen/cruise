@@ -64,6 +64,7 @@
     @media (max-width: $table) {
       margin-top: 10px;
       margin-bottom: 8px;
+      padding-left: 10px;
     }
   }
 
@@ -72,6 +73,7 @@
 
     @media (max-width: $table) {
       margin-left: 0;
+      padding-left: 10px;
     }
   }
 }

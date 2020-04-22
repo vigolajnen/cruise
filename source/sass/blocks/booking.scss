@@ -34,6 +34,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $desktop) {
+      padding-left: 44px;
+    }
+
+    @media (max-width: $table) {
+      padding-left: 15px;
+    }
   }
 
   & h2 {
@@ -124,6 +132,10 @@
     @media (max-width: $desktop) {
       width: 100%;
       padding-left: 0;
+    }
+
+    @media (max-width: $table) {
+      padding: 0 10px;
     }
   }
 }

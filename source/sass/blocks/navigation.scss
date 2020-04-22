@@ -4,7 +4,7 @@
     z-index: 5;
     position: absolute;
     top: 21px;
-    right: 2px;
+    right: 15px;
     height: 27px;
 
     border: none;
@@ -97,7 +97,7 @@
       }
 
       & .navigation__link {
-        font-family: $mainFont-2;
+        font-family: $mainFontMedium;
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
@@ -138,7 +138,7 @@
   }
 
   &__link {
-    font-family: $mainFont-2;
+    font-family: $mainFontMedium;
     font-weight: 500;
 
     font-size: 16px;

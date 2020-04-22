@@ -7,7 +7,7 @@
   background-color: #dde9f5;
 
   @media (max-width: $desktop) {
-    padding: 87px 0 70px;
+    padding: 89px 0 70px;
     background-image: url("../img/advantage/advantage-tablet.jpg");
   }
 
@@ -47,6 +47,7 @@
         margin: 0 auto 32px;
         font-size: 24px;
         line-height: 140%;
+        letter-spacing: 0.07em;
       }
     }
   }
@@ -59,6 +60,14 @@
     padding: 0 0 0 20px;
     margin: 0;
     list-style: none;
+
+    @media (max-width: $desktop) {
+      padding: 0 0 0 18px;
+    }
+
+    @media (max-width: $table) {
+      padding: 0;
+    }
   }
 
   &__item {
@@ -76,7 +85,7 @@
     }
 
     @media (max-width: $desktop) {
-      padding: 24px 13px 20px 20px;
+      padding: 24px 8px 20px 20px;
       max-width: calc(33.33% - 17px);
 
       &:not(:nth-child(3n)) {
@@ -112,7 +121,7 @@
       max-width: 100%;
       margin: 0;
       margin-bottom: 7px;
-      font-family: $mainFont-2;
+      font-family: $mainFontMedium;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;
@@ -136,7 +145,6 @@
       line-height: 143%;
 
       @media (max-width: $desktop) {
-        padding-right: 5px;
         letter-spacing: 0.027em;
       }
 

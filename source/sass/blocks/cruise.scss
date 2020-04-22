@@ -19,7 +19,7 @@
       transition: opacity 1s;
 
       @media (max-width: $desktop) {
-        padding: 0 37px 0 33px;
+        padding: 0 28px 0 38px;
       }
 
       @media (max-width: $table) {
@@ -83,7 +83,7 @@
       margin: 0;
 
       padding: 21px 30px;
-      font-family: $mainFont-2;
+      font-family: $mainFontMedium;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;
@@ -116,15 +116,13 @@
     color: $primary-color;
     background-color: $default-color;
     text-decoration: none;
+    box-sizing: border-box;
 
     &:focus,
     &:hover {
       opacity: 0.5;
     }
 
-    @media (max-width: $desktop) {
-      margin-top: 23px;
-    }
 
     @media (max-width: $table) {
       margin-top: 24px;
@@ -143,7 +141,7 @@
 
   &__item-title {
     margin-bottom: 4px;
-    font-family: $mainFont-2;
+    font-family: $mainFontMedium;
     font-weight: 500;
   }
 

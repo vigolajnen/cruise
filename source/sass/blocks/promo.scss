@@ -7,7 +7,7 @@
   box-sizing: border-box;
 
   @media (max-width: $desktop) {
-    min-height: 546px;
+    min-height: 541px;
   }
 
   @media (max-width: $table) {
@@ -19,22 +19,22 @@
     max-width: 1113px;
 
     @media (max-width: $desktop) {
-      padding-top: 178px;
+      padding-top: 174px;
+      padding-left: 46px;
     }
 
     @media (max-width: $table) {
-      padding-top: 100px;
+      padding-top: 99px;
+      padding-left: 25px;
     }
   }
 
   & h1 {
     margin: 0 0 12px 0;
 
-    margin-bottom: 12px;
-    font-family: $mainFontBold;
     font-size: 54px;
     line-height: 66px;
-    letter-spacing: 0.055em;
+
     font-weight: bold;
 
     @media (max-width: $desktop) {
@@ -47,6 +47,7 @@
       margin-bottom: 10px;
       font-size: 36px;
       line-height: 125%;
+      letter-spacing: normal;
     }
 
     & span {

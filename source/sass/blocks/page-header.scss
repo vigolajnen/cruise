@@ -6,7 +6,7 @@
   background-color: transparent;
 
   @media (max-width: $desktop) {
-    padding: 27px 0;
+    padding: 29px 0;
   }
 
   @media (max-width: $table) {
@@ -41,5 +41,13 @@
 
   &__logo {
     padding-left: 20px;
+
+    @media (max-width: $desktop) {
+      padding-left: 15px;
+    }
+
+    @media (max-width: $table) {
+      padding-left: 10px;
+    }
   }
 }
