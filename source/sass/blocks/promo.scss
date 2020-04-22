@@ -16,7 +16,7 @@
 
   &__container {
     padding-top: 162px;
-    max-width: 1125px;
+    max-width: 1113px;
 
     @media (max-width: $desktop) {
       padding-top: 178px;
@@ -34,6 +34,7 @@
     font-family: $mainFontBold;
     font-size: 54px;
     line-height: 66px;
+    letter-spacing: 0.055em;
     font-weight: bold;
 
     @media (max-width: $desktop) {

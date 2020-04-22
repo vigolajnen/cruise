@@ -1,5 +1,5 @@
 .advantage {
-  padding: 107px 0 90px;
+  padding: 110px 0 90px;
   background-image: url("../img/advantage/advantage.jpg");
   background-size: cover;
   background-position: center;
@@ -56,14 +56,14 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 
-    padding: 0;
+    padding: 0 0 0 20px;
     margin: 0;
     list-style: none;
   }
 
   &__item {
     flex-grow: 0;
-    padding: 30px 30px 26px 30px;
+    padding: 30px 30px 42px 30px;
     margin-bottom: 30px;
     max-width: calc(33.33% - 27px);
     width: 100%;
@@ -100,6 +100,8 @@
 
     &--pr {
       & p {
+        padding-right: 20px;
+
         @media (max-width: $table) {
           padding-right: 26px;
         }

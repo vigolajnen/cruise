@@ -68,7 +68,7 @@ html {
   max-width: 1366px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 75px;
+  padding: 0 84px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   @media (max-width: 1023px) {
@@ -146,6 +146,8 @@ html {
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: flex-start; } }
+  .page-header__logo {
+    padding-left: 20px; }
 
 .logo {
   display: block;
@@ -332,7 +334,7 @@ html {
       min-height: 423px; } }
   .promo__container {
     padding-top: 162px;
-    max-width: 1125px; }
+    max-width: 1113px; }
     @media (max-width: 1023px) {
       .promo__container {
         padding-top: 178px; } }
@@ -345,6 +347,7 @@ html {
     font-family: "Montserrat Bold", "Arial", sans-serif;
     font-size: 54px;
     line-height: 66px;
+    letter-spacing: 0.055em;
     font-weight: bold; }
     @media (max-width: 1023px) {
       .promo h1 {
@@ -393,7 +396,7 @@ html {
             justify-content: space-between; }
   .about__info {
     width: 50%;
-    padding: 65px 40px 0 0;
+    padding: 68px 40px 0 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     @media (max-width: 1023px) {
@@ -406,7 +409,7 @@ html {
   .about__pic {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 48%; }
+    width: 47%; }
     @media (max-width: 767px) {
       .about__pic {
         width: auto; } }
@@ -429,6 +432,7 @@ html {
     font-size: 28px;
     line-height: 150%;
     font-weight: 600;
+    letter-spacing: 0.05em;
     max-width: 100%; }
     @media (max-width: 1023px) {
       .about__text h2 {
@@ -460,7 +464,7 @@ html {
         letter-spacing: 0.04em; } }
 
 .advantage {
-  padding: 107px 0 90px;
+  padding: 110px 0 90px;
   background-image: url("../img/advantage/advantage.jpg");
   background-size: cover;
   background-position: center;
@@ -509,14 +513,14 @@ html {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 0;
+    padding: 0 0 0 20px;
     margin: 0;
     list-style: none; }
   .advantage__item {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    padding: 30px 30px 26px 30px;
+    padding: 30px 30px 42px 30px;
     margin-bottom: 30px;
     max-width: calc(33.33% - 27px);
     width: 100%;
@@ -541,9 +545,11 @@ html {
         max-width: 100%; }
         .advantage__item:not(:nth-child(3n)) {
           margin-right: 0; } }
-    @media (max-width: 767px) {
-      .advantage__item--pr p {
-        padding-right: 26px; } }
+    .advantage__item--pr p {
+      padding-right: 20px; }
+      @media (max-width: 767px) {
+        .advantage__item--pr p {
+          padding-right: 26px; } }
     .advantage__item h3 {
       max-width: 100%;
       margin: 0;
@@ -628,6 +634,7 @@ html {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0 9px 0 29px;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -851,6 +858,7 @@ html {
     font-size: 40px;
     line-height: 150%;
     font-weight: bold;
+    letter-spacing: 0.07em;
     text-align: left; }
     @media (max-width: 1023px) {
       .booking h2 {
@@ -889,8 +897,8 @@ html {
         display: block; } }
   .booking__info {
     width: 50%;
-    padding-left: 60px;
-    margin-top: -10px;
+    padding-left: 81px;
+    margin-top: -7px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     @media (max-width: 1023px) {
@@ -960,6 +968,7 @@ html {
   .contacts__info {
     width: 43%;
     padding-top: 17px;
+    padding-left: 5px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     @media (max-width: 1023px) {
@@ -1212,7 +1221,7 @@ html {
         margin-top: 0; } }
 
 .page-footer {
-  padding: 50px 0;
+  padding: 53px 0;
   background-color: #011c40; }
   @media (max-width: 1023px) {
     .page-footer {
@@ -1249,7 +1258,8 @@ html {
             -ms-flex-align: start;
                 align-items: flex-start; } }
   .page-footer__logo {
-    margin-right: 40px; }
+    margin-right: 40px;
+    padding-left: 20px; }
     @media (max-width: 1200px) {
       .page-footer__logo {
         margin-right: 25px; } }
