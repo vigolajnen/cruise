@@ -31,6 +31,7 @@
   &__container {
     & h2 {
       margin: 0 auto 50px;
+      font-family: $mainFontBold;
       font-size: 28px;
       line-height: 150%;
       font-weight: 600;
@@ -109,6 +110,7 @@
       max-width: 100%;
       margin: 0;
       margin-bottom: 7px;
+      font-family: $mainFont-2;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;

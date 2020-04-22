@@ -1,8 +1,15 @@
 @font-face {
+  font-family: "Montserrat Light", "Arial", sans-serif;
+  font-display: auto;
+  src: url("../fonts/montserratlight.woff2") format("woff2"), url("../fonts/montserratlight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
   font-family: "Montserrat", "Arial", sans-serif;
   font-display: auto;
   src: url("../fonts/Montserrat.woff2") format("woff2"), url("../fonts/Montserrat.woff") format("woff");
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal; }
 
 @font-face {
@@ -37,7 +44,7 @@ html {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "Montserrat Light", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -233,6 +240,7 @@ html {
       margin-bottom: 19px;
       margin-right: 0; }
     .navigation__inner--active .navigation__link {
+      font-family: "Montserrat", "Arial", sans-serif;
       font-weight: 500;
       font-size: 18px;
       line-height: 22px;
@@ -270,6 +278,7 @@ html {
       margin-right: 23px; } }
 
 .navigation__link {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -333,6 +342,7 @@ html {
   .promo h1 {
     margin: 0 0 12px 0;
     margin-bottom: 12px;
+    font-family: "Montserrat Bold", "Arial", sans-serif;
     font-size: 54px;
     line-height: 66px;
     font-weight: bold; }
@@ -415,6 +425,7 @@ html {
   .about__text h2 {
     margin: 0;
     margin-bottom: 26px;
+    font-family: "Montserrat Bold", "Arial", sans-serif;
     font-size: 28px;
     line-height: 150%;
     font-weight: 600;
@@ -474,6 +485,7 @@ html {
       background-image: url("../img/advantage/advantage@2x.jpg"); } }
   .advantage__container h2 {
     margin: 0 auto 50px;
+    font-family: "Montserrat Bold", "Arial", sans-serif;
     font-size: 28px;
     line-height: 150%;
     font-weight: 600;
@@ -536,6 +548,7 @@ html {
       max-width: 100%;
       margin: 0;
       margin-bottom: 7px;
+      font-family: "Montserrat", "Arial", sans-serif;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%; }
@@ -588,6 +601,7 @@ html {
         padding: 0 16px; } }
   .nearest-cruises h2 {
     margin: 0 auto 50px;
+    font-family: "Montserrat Bold", "Arial", sans-serif;
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
@@ -743,6 +757,7 @@ html {
     .cruise__inner h3 {
       margin: 0;
       padding: 21px 30px;
+      font-family: "Montserrat", "Arial", sans-serif;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;
@@ -760,6 +775,7 @@ html {
     margin-top: auto;
     margin-bottom: 33px;
     padding: 10px;
+    font-family: "Montserrat Bold", "Arial", sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
@@ -786,6 +802,7 @@ html {
         margin-bottom: 9px; } }
   .cruise__item-title {
     margin-bottom: 4px;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 500; }
   .cruise__item-val {
     overflow: hidden;
@@ -830,6 +847,7 @@ html {
   .booking h2 {
     margin: 0;
     margin-bottom: 10px;
+    font-family: "Montserrat Bold", "Arial", sans-serif;
     font-size: 40px;
     line-height: 150%;
     font-weight: bold;
@@ -954,6 +972,7 @@ html {
         width: 100%; } }
   .contacts p {
     margin: 0 0 29px 0;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 18px;
     line-height: 150%;
     font-weight: 500; }
@@ -1060,6 +1079,7 @@ html {
       padding: 35px 30px 40px; } }
   .form__title {
     margin-bottom: 30px;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 140%;

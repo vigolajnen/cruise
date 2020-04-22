@@ -1,9 +1,18 @@
 @font-face {
   font-family: $mainFont;
   font-display: auto;
+  src: url("../fonts/montserratlight.woff2") format("woff2"),
+    url("../fonts/montserratlight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $mainFont-2;
+  font-display: auto;
   src: url("../fonts/Montserrat.woff2") format("woff2"),
     url("../fonts/Montserrat.woff") format("woff");
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
 }
 

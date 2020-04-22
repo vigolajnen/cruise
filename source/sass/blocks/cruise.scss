@@ -83,6 +83,7 @@
       margin: 0;
 
       padding: 21px 30px;
+      font-family: $mainFont-2;
       font-weight: 500;
       font-size: 18px;
       line-height: 150%;
@@ -105,6 +106,7 @@
     margin-top: auto;
     margin-bottom: 33px;
     padding: 10px;
+    font-family: $mainFontBold;
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
@@ -141,6 +143,7 @@
 
   &__item-title {
     margin-bottom: 4px;
+    font-family: $mainFont-2;
     font-weight: 500;
   }
 

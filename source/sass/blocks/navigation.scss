@@ -97,6 +97,7 @@
       }
 
       & .navigation__link {
+        font-family: $mainFont-2;
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
@@ -137,6 +138,7 @@
   }
 
   &__link {
+    font-family: $mainFont-2;
     font-weight: 500;
 
     font-size: 16px;
