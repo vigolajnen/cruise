@@ -37,6 +37,9 @@
     }
 
     &--opened {
+      top: 19px;
+      right: 3px;
+
       & .navigation__icon {
         fill: $primary-color;
       }
@@ -80,8 +83,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      padding: 30px;
-      padding-top: 70px;
+      padding: 88px 15px 30px;
       background-color: $default-color;
 
       & .navigation__logo {
@@ -90,7 +92,8 @@
       }
 
       & .navigation__item {
-        margin-bottom: 30px;
+        margin-bottom: 19px;
+        margin-right: 0;
       }
 
       & .navigation__link {
