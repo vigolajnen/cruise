@@ -18,6 +18,7 @@ function mask (inputName, mask, evt) {
     var newValue = "";
 
     for (var vId = 0, mId = 0 ; mId < mask.length ; ) {
+      
       if (mId >= value.length)
         break;
 
@@ -28,7 +29,7 @@ function mask (inputName, mask, evt) {
 
       // Found a literal
       while (mask[mId].match(literalPattern) == null) {
-        if (value[vId] == mask[mId])
+        if (value[vId] === mask[mId])
           break;
 
         newValue += mask[mId++];
@@ -36,8 +37,10 @@ function mask (inputName, mask, evt) {
 
       newValue += value[vId++];
       mId++;
+
     }
 
     text.value = newValue;
+    
   } catch(e) {}
 }

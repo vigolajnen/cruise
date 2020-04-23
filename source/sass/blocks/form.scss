@@ -68,6 +68,18 @@
     }
   }
 
+  & input:valid {
+    border-color: green;
+  }
+
+  & input:invalid {
+    border-color: red;
+  }
+
+  & input:required:valid {
+    border-color: green;
+  }
+
   & input[type="text"],
   & input[type="email"] {
     padding: 9px 14px;

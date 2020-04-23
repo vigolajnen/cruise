@@ -1150,6 +1150,12 @@ html {
         margin-bottom: 28px;
         letter-spacing: 0.04em;
         line-height: 110%; } }
+  .form input:valid {
+    border-color: green; }
+  .form input:invalid {
+    border-color: red; }
+  .form input:required:valid {
+    border-color: green; }
   .form input[type="text"],
   .form input[type="email"] {
     padding: 9px 14px;

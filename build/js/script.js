@@ -42,4 +42,14 @@
       }
     }
   };
+
+  var phone = document.querySelector('#phone');
+  phone.addEventListener('input', function () {
+    if (phone.value.length < 16) {
+      phone.setCustomValidity('Введите номер телефона полностью');
+    } else {
+      phone.setCustomValidity('');
+    }
+  });
+
 })();
