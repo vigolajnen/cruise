@@ -2,6 +2,7 @@ function mask (inputName, mask, evt) {
   try {
     var text = document.getElementById(inputName);
     var value = text.value;
+    
 
     // If user pressed DEL or BACK SPACE, clean the value
     try {

@@ -2,7 +2,7 @@
   padding: 110px 0 117px;
 
   @media (max-width: $desktop) {
-    padding: 90px 0 58px;
+    padding: 92px 0 58px;
   }
 
   @media (max-width: $table) {
@@ -17,14 +17,12 @@
 
   &__info {
     width: 50%;
-    padding: 68px 40px 0 20px;
+    padding: 70px 40px 0 0;
     box-sizing: border-box;
 
     @media (max-width: $desktop) {
-      width: 53%;
+      width: 52%;
       padding: 0;
-      padding-left: 18px;
-      padding-top: 2px;
     }
 
     @media (max-width: $table) {
@@ -36,7 +34,7 @@
 
   &__pic {
     box-sizing: border-box;
-    width: 47%;
+    width: 48%;
 
     @media (max-width: $table) {
       width: auto;
@@ -59,7 +57,7 @@
   &__text {
     & h2 {
       margin: 0;
-      margin-bottom: 26px;
+      margin-bottom: 23px;
       font-family: $mainFontBold;
       font-size: 28px;
       line-height: 150%;

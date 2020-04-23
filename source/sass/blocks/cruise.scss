@@ -19,7 +19,7 @@
       transition: opacity 1s;
 
       @media (max-width: $desktop) {
-        padding: 0 28px 0 38px;
+        padding: 0 33px 0 35px;
       }
 
       @media (max-width: $table) {
@@ -123,7 +123,6 @@
       opacity: 0.5;
     }
 
-
     @media (max-width: $table) {
       margin-bottom: 35px;
     }
@@ -133,6 +132,10 @@
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 140%;
+
+    @media (max-width: $desktop) {
+      margin-bottom: 12px;
+    }
 
     @media (max-width: $table) {
       margin-bottom: 11px;

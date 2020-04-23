@@ -68,12 +68,12 @@ html {
   max-width: 1366px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 84px;
+  padding: 0 103px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   @media (max-width: 1023px) {
     .container {
-      padding: 0 28px; } }
+      padding: 0 45px; } }
   @media (max-width: 767px) {
     .container {
       padding: 0 11px; } }
@@ -146,14 +146,6 @@ html {
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: flex-start; } }
-  .page-header__logo {
-    padding-left: 20px; }
-    @media (max-width: 1023px) {
-      .page-header__logo {
-        padding-left: 15px; } }
-    @media (max-width: 767px) {
-      .page-header__logo {
-        padding-left: 0; } }
 
 .logo {
   display: block;
@@ -341,7 +333,7 @@ html {
       min-height: 423px; } }
   .promo__container {
     padding-top: 162px;
-    max-width: 1113px; }
+    max-width: 1173px; }
     @media (max-width: 1023px) {
       .promo__container {
         padding-top: 174px;
@@ -388,7 +380,7 @@ html {
   padding: 110px 0 117px; }
   @media (max-width: 1023px) {
     .about {
-      padding: 90px 0 58px; } }
+      padding: 92px 0 58px; } }
   @media (max-width: 767px) {
     .about {
       padding: 57px 0 58px; } }
@@ -403,15 +395,13 @@ html {
             justify-content: space-between; }
   .about__info {
     width: 50%;
-    padding: 68px 40px 0 20px;
+    padding: 70px 40px 0 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     @media (max-width: 1023px) {
       .about__info {
-        width: 53%;
-        padding: 0;
-        padding-left: 18px;
-        padding-top: 2px; } }
+        width: 52%;
+        padding: 0; } }
     @media (max-width: 767px) {
       .about__info {
         width: 100%;
@@ -420,7 +410,7 @@ html {
   .about__pic {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 47%; }
+    width: 48%; }
     @media (max-width: 767px) {
       .about__pic {
         width: auto; } }
@@ -438,7 +428,7 @@ html {
           padding-top: 0; } }
   .about__text h2 {
     margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
     font-family: "Montserrat Bold", "Arial", sans-serif;
     font-size: 28px;
     line-height: 150%;
@@ -500,7 +490,7 @@ html {
     .advantage {
       background-image: url("../img/advantage/advantage@2x.jpg"); } }
   .advantage__container h2 {
-    margin: 0 auto 50px 15px;
+    margin: 0 auto 50px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 28px;
     line-height: 150%;
@@ -510,7 +500,6 @@ html {
     @media (max-width: 1023px) {
       .advantage__container h2 {
         margin-bottom: 50px;
-        margin-left: 12px;
         font-size: 26px; } }
     @media (max-width: 767px) {
       .advantage__container h2 {
@@ -526,15 +515,9 @@ html {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 0 0 0 20px;
+    padding: 0;
     margin: 0;
     list-style: none; }
-    @media (max-width: 1023px) {
-      .advantage__list {
-        padding: 0 0 0 15px; } }
-    @media (max-width: 767px) {
-      .advantage__list {
-        padding: 0; } }
   .advantage__item {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -594,7 +577,7 @@ html {
           padding-right: 0; } }
   .advantage__icon {
     height: 32px;
-    margin-bottom: 13px; }
+    margin-bottom: 12px; }
     @media (max-width: 1023px) {
       .advantage__icon {
         margin-bottom: 11px;
@@ -616,12 +599,12 @@ html {
     padding: 0 88px; }
     @media (max-width: 1023px) {
       .nearest-cruises__container {
-        padding: 0 50px; } }
+        padding: 0 60px; } }
     @media (max-width: 767px) {
       .nearest-cruises__container {
         padding: 0 24px; } }
   .nearest-cruises h2 {
-    margin: 0 auto 50px 15px;
+    margin: 0 auto 50px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 600;
     font-size: 28px;
@@ -631,12 +614,11 @@ html {
     @media (max-width: 1023px) {
       .nearest-cruises h2 {
         margin-bottom: 50px;
-        margin-left: 12px;
         max-width: 100%;
         font-size: 26px; } }
     @media (max-width: 767px) {
       .nearest-cruises h2 {
-        margin: 0 auto 32px 3px;
+        margin: 0 auto 32px;
         max-width: 100%;
         font-size: 24px;
         line-height: 140%; } }
@@ -650,16 +632,12 @@ html {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0 9px 0 29px;
+    padding: 0 28px;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     overflow: hidden; }
     @media (max-width: 1023px) {
-      .nearest-cruises__items {
-        padding: 0;
-        padding-left: 10px; } }
-    @media (max-width: 767px) {
       .nearest-cruises__items {
         padding: 0; } }
   .nearest-cruises__item {
@@ -730,7 +708,7 @@ html {
     transition: opacity 1s; }
     @media (max-width: 1023px) {
       .cruise:focus .cruise__info, .cruise:hover .cruise__info {
-        padding: 0 28px 0 38px; } }
+        padding: 0 33px 0 35px; } }
     @media (max-width: 767px) {
       .cruise:focus .cruise__info, .cruise:hover .cruise__info {
         padding: 0 25px; } }
@@ -826,6 +804,9 @@ html {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 140%; }
+    @media (max-width: 1023px) {
+      .cruise__item {
+        margin-bottom: 12px; } }
     @media (max-width: 767px) {
       .cruise__item {
         margin-bottom: 11px; } }
@@ -926,8 +907,8 @@ html {
         display: block; } }
   .booking__info {
     width: 50%;
-    padding-left: 81px;
-    margin-top: -7px;
+    padding-left: 61px;
+    margin-top: -10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     @media (max-width: 1023px) {
@@ -972,6 +953,9 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 767px) {
+      .contacts__container {
+        padding: 0 16px; } }
   .contacts__map {
     width: 48%;
     overflow: hidden; }
@@ -996,14 +980,13 @@ html {
          object-fit: cover; }
   .contacts__info {
     width: 43%;
-    padding-top: 17px;
-    padding-left: 5px;
+    padding-top: 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     @media (max-width: 1023px) {
       .contacts__info {
-        width: 47%;
-        padding-top: 13px; } }
+        width: 48%;
+        padding-top: 9px; } }
     @media (max-width: 767px) {
       .contacts__info {
         padding-top: 21px;
@@ -1038,7 +1021,8 @@ html {
       opacity: 0.5; }
     @media (max-width: 1023px) {
       .contacts__link {
-        line-height: 130%; } }
+        line-height: 130%;
+        margin-bottom: 23px; } }
     @media (max-width: 767px) {
       .contacts__link {
         margin-bottom: 20px;
@@ -1254,7 +1238,7 @@ html {
         margin-top: 0; } }
 
 .page-footer {
-  padding: 53px 0;
+  padding: 51px 0;
   background-color: #011c40; }
   @media (max-width: 1023px) {
     .page-footer {
@@ -1291,8 +1275,7 @@ html {
             -ms-flex-align: start;
                 align-items: flex-start; } }
   .page-footer__logo {
-    margin-right: 40px;
-    padding-left: 20px; }
+    margin-right: 40px; }
     @media (max-width: 1200px) {
       .page-footer__logo {
         margin-right: 25px; } }

@@ -13,7 +13,7 @@
     padding: 0 88px;
 
     @media (max-width: $desktop) {
-      padding: 0 50px;
+      padding: 0 60px;
     }
 
     @media (max-width: $table) {
@@ -22,7 +22,7 @@
   }
 
   & h2 {
-    margin: 0 auto 50px 15px;
+    margin: 0 auto 50px;
     font-family: $mainFont;
     font-weight: 600;
     font-size: 28px;
@@ -32,13 +32,12 @@
 
     @media (max-width: $desktop) {
       margin-bottom: 50px;
-      margin-left: 12px;
       max-width: 100%;
       font-size: 26px;
     }
 
     @media (max-width: $table) {
-      margin: 0 auto 32px 3px;
+      margin: 0 auto 32px;
       max-width: 100%;
       font-size: 24px;
       line-height: 140%;
@@ -49,17 +48,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 9px 0 29px;
+    padding: 0 28px;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
 
     @media (max-width: $desktop) {
-      padding: 0;
-      padding-left: 10px;
-    }
-
-    @media (max-width: $table) {
       padding: 0;
     }
   }

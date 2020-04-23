@@ -38,16 +38,4 @@
       align-items: flex-start;
     }
   }
-
-  &__logo {
-    padding-left: 20px;
-
-    @media (max-width: $desktop) {
-      padding-left: 15px;
-    }
-
-    @media (max-width: $table) {
-      padding-left: 0;
-    }
-  }
 }

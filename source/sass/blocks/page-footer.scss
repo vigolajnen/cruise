@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 53px 0;
+  padding: 51px 0;
   background-color: $primary-color;
 
   @media (max-width: $desktop) {
@@ -27,7 +27,6 @@
 
   &__logo {
     margin-right: 40px;
-    padding-left: 20px;
 
     @media (max-width: 1200px) {
       margin-right: 25px;
