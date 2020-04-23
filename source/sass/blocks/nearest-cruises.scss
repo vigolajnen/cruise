@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $table) {
-    padding: 60px 0 34px;
+    padding: 57px 0 34px;
   }
 
   &__container {
@@ -22,11 +22,9 @@
   }
 
   & h2 {
-    margin: 0 auto 50px;
-    font-family: $mainFontBold;
-
+    margin: 0 auto 50px 15px;
+    font-family: $mainFont;
     font-weight: 600;
-
     font-size: 28px;
     line-height: 150%;
     max-width: 100%;
@@ -34,16 +32,16 @@
 
     @media (max-width: $desktop) {
       margin-bottom: 50px;
+      margin-left: 12px;
       max-width: 100%;
       font-size: 26px;
     }
 
     @media (max-width: $table) {
-      margin: 0 auto 34px;
+      margin: 0 auto 32px 3px;
       max-width: 100%;
       font-size: 24px;
       line-height: 140%;
-      letter-spacing: 0.07em;
     }
   }
 

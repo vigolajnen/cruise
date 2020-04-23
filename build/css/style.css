@@ -461,7 +461,8 @@ html {
     margin: 0;
     padding-right: 18px;
     margin-bottom: 35px;
-    font-size: 16px; }
+    font-size: 16px;
+    font-weight: normal; }
     @media (max-width: 1023px) {
       .about__text p {
         padding-right: 25px;
@@ -475,7 +476,7 @@ html {
         letter-spacing: 0.04em; } }
 
 .advantage {
-  padding: 110px 0 90px;
+  padding: 108px 0 90px;
   background-image: url("../img/advantage/advantage.jpg");
   background-size: cover;
   background-position: center;
@@ -499,8 +500,8 @@ html {
     .advantage {
       background-image: url("../img/advantage/advantage@2x.jpg"); } }
   .advantage__container h2 {
-    margin: 0 auto 50px;
-    font-family: "Montserrat Bold", "Arial", sans-serif;
+    margin: 0 auto 50px 15px;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-size: 28px;
     line-height: 150%;
     font-weight: 600;
@@ -509,13 +510,13 @@ html {
     @media (max-width: 1023px) {
       .advantage__container h2 {
         margin-bottom: 50px;
+        margin-left: 12px;
         font-size: 26px; } }
     @media (max-width: 767px) {
       .advantage__container h2 {
         margin: 0 auto 30px;
         font-size: 24px;
-        line-height: 140%;
-        letter-spacing: 0.07em; } }
+        line-height: 140%; } }
   .advantage__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -538,7 +539,7 @@ html {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    padding: 30px 30px 42px 30px;
+    padding: 30px 30px 27px 30px;
     margin-bottom: 30px;
     max-width: calc(33.33% - 27px);
     width: 100%;
@@ -556,7 +557,7 @@ html {
     @media (max-width: 767px) {
       .advantage__item {
         margin: 0;
-        margin-bottom: 27px;
+        margin-bottom: 29px;
         padding: 27px 15px 19px 23px; } }
     @media (max-width: 650px) {
       .advantage__item {
@@ -579,21 +580,18 @@ html {
       @media (max-width: 1023px) {
         .advantage__item h3 {
           max-width: 200px;
-          margin-bottom: 8px; } }
+          margin-bottom: 6px; } }
       @media (max-width: 1023px) {
         .advantage__item h3 span {
           display: block; } }
     .advantage__item p {
       margin: 0;
+      font-weight: normal;
       font-size: 14px;
       line-height: 143%; }
-      @media (max-width: 1023px) {
-        .advantage__item p {
-          letter-spacing: 0.027em; } }
       @media (max-width: 767px) {
         .advantage__item p {
-          padding-right: 0;
-          letter-spacing: 0.027em; } }
+          padding-right: 0; } }
   .advantage__icon {
     height: 32px;
     margin-bottom: 13px; }
@@ -603,7 +601,7 @@ html {
         height: 27px; } }
     @media (max-width: 767px) {
       .advantage__icon {
-        margin-bottom: 12px;
+        margin-bottom: 13px;
         height: 25px; } }
 
 .nearest-cruises {
@@ -613,7 +611,7 @@ html {
       padding: 89px 0 74px; } }
   @media (max-width: 767px) {
     .nearest-cruises {
-      padding: 60px 0 34px; } }
+      padding: 57px 0 34px; } }
   .nearest-cruises__container {
     padding: 0 88px; }
     @media (max-width: 1023px) {
@@ -623,8 +621,8 @@ html {
       .nearest-cruises__container {
         padding: 0 24px; } }
   .nearest-cruises h2 {
-    margin: 0 auto 50px;
-    font-family: "Montserrat Bold", "Arial", sans-serif;
+    margin: 0 auto 50px 15px;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
@@ -633,15 +631,15 @@ html {
     @media (max-width: 1023px) {
       .nearest-cruises h2 {
         margin-bottom: 50px;
+        margin-left: 12px;
         max-width: 100%;
         font-size: 26px; } }
     @media (max-width: 767px) {
       .nearest-cruises h2 {
-        margin: 0 auto 34px;
+        margin: 0 auto 32px 3px;
         max-width: 100%;
         font-size: 24px;
-        line-height: 140%;
-        letter-spacing: 0.07em; } }
+        line-height: 140%; } }
   .nearest-cruises__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -908,10 +906,11 @@ html {
   .booking p {
     max-width: 343px;
     margin: 0 auto 0 0;
-    text-align: left; }
+    text-align: left;
+    font-weight: normal; }
     @media (max-width: 1023px) {
       .booking p {
-        max-width: 340px;
+        max-width: 345px;
         margin: 0 auto;
         font-size: 18px;
         line-height: 150%;
@@ -1008,7 +1007,6 @@ html {
     @media (max-width: 767px) {
       .contacts__info {
         padding-top: 21px;
-        padding-right: 5px;
         width: 100%; } }
   .contacts p {
     margin: 0 0 29px 0;
@@ -1030,6 +1028,7 @@ html {
             align-items: flex-start;
     margin-bottom: 25px;
     font-size: 16px;
+    font-weight: normal;
     line-height: 150%;
     color: #011c40;
     text-decoration: none;
@@ -1048,11 +1047,14 @@ html {
     width: 90%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       .contacts__text span {
         display: block; } }
   .contacts__icon {
     margin-right: 9px; }
+    @media (max-width: 767px) {
+      .contacts__icon {
+        margin-right: 7px; } }
 
 .social {
   display: -webkit-box;

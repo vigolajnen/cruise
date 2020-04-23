@@ -1,5 +1,5 @@
 .advantage {
-  padding: 110px 0 90px;
+  padding: 108px 0 90px;
   background-image: url("../img/advantage/advantage.jpg");
   background-size: cover;
   background-position: center;
@@ -30,8 +30,8 @@
 
   &__container {
     & h2 {
-      margin: 0 auto 50px;
-      font-family: $mainFontBold;
+      margin: 0 auto 50px 15px;
+      font-family: $mainFont;
       font-size: 28px;
       line-height: 150%;
       font-weight: 600;
@@ -40,6 +40,7 @@
 
       @media (max-width: $desktop) {
         margin-bottom: 50px;
+        margin-left: 12px;
         font-size: 26px;
       }
 
@@ -47,7 +48,6 @@
         margin: 0 auto 30px;
         font-size: 24px;
         line-height: 140%;
-        letter-spacing: 0.07em;
       }
     }
   }
@@ -72,7 +72,7 @@
 
   &__item {
     flex-grow: 0;
-    padding: 30px 30px 42px 30px;
+    padding: 30px 30px 27px 30px;
     margin-bottom: 30px;
     max-width: calc(33.33% - 27px);
     width: 100%;
@@ -95,7 +95,7 @@
 
     @media (max-width: $table) {
       margin: 0;
-      margin-bottom: 27px;
+      margin-bottom: 29px;
       padding: 27px 15px 19px 23px;
     }
 
@@ -128,7 +128,7 @@
 
       @media (max-width: $desktop) {
         max-width: 200px;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
       }
 
       & span {
@@ -140,17 +140,12 @@
 
     & p {
       margin: 0;
-
+      font-weight: normal;
       font-size: 14px;
       line-height: 143%;
 
-      @media (max-width: $desktop) {
-        letter-spacing: 0.027em;
-      }
-
       @media (max-width: $table) {
         padding-right: 0;
-        letter-spacing: 0.027em;
       }
     }
   }
@@ -165,7 +160,7 @@
     }
 
     @media (max-width: $table) {
-      margin-bottom: 12px;
+      margin-bottom: 13px;
       height: 25px;
     }
   }

@@ -52,7 +52,6 @@
 
     @media (max-width: $table) {
       padding-top: 21px;
-      padding-right: 5px;
       width: 100%;
     }
   }
@@ -76,6 +75,7 @@
     align-items: flex-start;
     margin-bottom: 25px;
     font-size: 16px;
+    font-weight: normal;
     line-height: 150%;
     color: $primary-color;
     text-decoration: none;
@@ -101,7 +101,7 @@
     box-sizing: border-box;
 
     & span {
-      @media (max-width: $table) {
+      @media (max-width: $desktop) {
         display: block;
       }
     }
@@ -109,5 +109,9 @@
 
   &__icon {
     margin-right: 9px;
+
+    @media (max-width: $table) {
+      margin-right: 7px;
+    }
   }
 }
