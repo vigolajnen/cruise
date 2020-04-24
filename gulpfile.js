@@ -114,7 +114,7 @@ gulp.task('libs', function () {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['./node_modules/svg4everybody/dist/svg4everybody.min.js', 'source/js/vendor.js', './js/mask.js'])
+  return gulp.src(['./js/svg4everybody.js', './js/mask.js'])
     .pipe(concat('vendor.min.js'))
     .pipe(gulp.dest('build/js'));
 });
